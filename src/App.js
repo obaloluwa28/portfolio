@@ -10,6 +10,7 @@ import IOT from './asset/Images/IoT.png'
 import vector from './asset/Images/vector.png'
 import vector_ from './asset/Images/vector1.png'
 import mypix from './asset/Images/myPix.png'
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
@@ -110,7 +111,26 @@ const App = () => {
         <div className="sideproj_title_contain" >
           <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Side Projects</span>
         </div>
+        <div className="main-box-contain">
+          <div className="Box1">
+            Hi
+          </div>
+
+          <div className="Box1">
+            Hi
+          </div>
+
+          <div className="Box1">
+            Hi
+          </div>
+
+          <div className="Box1">
+            Hi
+          </div>
+        </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
