@@ -1,23 +1,98 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
+import Togglebutton from './Components/Togglebutton/Togglebutton';
+import OurLogo from './asset/Images/Logo.png'
+import Sideimg from './asset/Images/Logo2.png'
+import figma from './asset/Images/Figma.png'
+import react from './asset/Images/React.png'
+import backend from './asset/Images/Backend.png'
+import IOT from './asset/Images/IoT.png'
 
-function App() {
+const App = () => {
+  const [bgcolor, setBgcolor] = useState(true)
+  const toggleState = () =>{
+    setBgcolor(!bgcolor)
+    console.log("Checked me")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={bgcolor ? "AppContainer" : "AppContainer_inv"}>
+      <div className={bgcolor ? "navbarContainer" : "navbarContainer_inv"}>
+        <div className="imgContainer"><img className="myimg" src={OurLogo} alt="Logo" /></div>
+        <ul className={bgcolor ? "ulistedTabs" : "ulistedTabs_inv"}>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+        <Togglebutton currentState={toggleState} />
+      </div>
+      <div className="myhome_container">
+        <div className="myhome">
+          <div className='textContain'>
+            <div className='sub_textContain'>
+              <div id={bgcolor ? "p1" : "p1_"}>Hello I'm</div>
+              <div id={bgcolor ? "p2" : "p2_"}>ODUYEMI OBALOLUWA</div>
+              <div id={bgcolor ? "p3" : "p3_"}>FULL STACK WEB DEVELOPER</div>
+              <div id={bgcolor ? "p4" : "p4_"}><span>Download Resume</span></div>
+            </div>
+          </div>
+
+          <div className='imgContain'>
+            <img className="home_img" src={Sideimg} alt="Homeimg"/>
+          </div>
+        </div>
+        <div>
+          <div className="sub_title_container">
+            <span id={bgcolor ? "sub_title":"sub_title_"}>Things I do</span>
+          </div>
+          <div className="TID_Container">
+            <div className= {bgcolor ? "TID_Box1" : "TID_Box1_"}>
+              <img src={figma} alt="NoLogo" id="mini_Icons"/>
+              <div className="TID_mini_container">
+                <span id={bgcolor ? "TID_mini_sub" : "TID_mini_sub_"}>Design</span>
+              </div>
+              <div className="text_mini_container">
+                <span id={bgcolor ? "text_descrpt" : "text_descrpt_"}>My Love for creative UI designs made me choose Figma as the best choice for me  </span>
+              </div>
+            </div>
+
+            <div className={bgcolor ? "TID_Box1" : "TID_Box1_"}>
+              <img src={react} alt="NoLogo" id="mini_Icons"/>
+              <div className="TID_mini_container">
+                <span id={bgcolor ? "TID_mini_sub" : "TID_mini_sub_"}>FrontEnd</span>
+              </div>
+              <div className="text_mini_container">
+                <span id={bgcolor ? "text_descrpt" : "text_descrpt_"}>My HTML and CSS skills as well as JavaScript are top-notch</span>
+              </div>
+            </div>
+
+            <div className={bgcolor ? "TID_Box1" : "TID_Box1_"}>
+              <img src={backend} alt="NoLogo" id="mini_Icons"/>
+              <div className="TID_mini_container">
+                <span id={bgcolor ? "TID_mini_sub" : "TID_mini_sub_"}>BackEnd</span>
+              </div>
+              <div className="text_mini_container">
+                <span id={bgcolor ? "text_descrpt" : "text_descrpt_"}>Fell in Love with Laravel among other backend framework like C# .NET and NodeJs due to its Easy to use feature</span>
+              </div>
+            </div>
+
+            <div className={bgcolor ? "TID_Box1" : "TID_Box1_"}>
+              <img src={IOT} alt="NoLogo" id="mini_Icons"/>
+              <div className="TID_mini_container">
+                <span id={bgcolor ? "TID_mini_sub" : "TID_mini_sub_"}>Internet of Things</span>
+              </div>
+              <div className="text_mini_container">
+                <span id={bgcolor ? "text_descrpt" : "text_descrpt_"}>Seeing how hardware systems communicate with one another and the enviroment through sensors gives me great pleasure </span>
+              </div>
+            </div>
+          </div>
+
+          <div id="aboutme_block">
+              
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
