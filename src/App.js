@@ -15,11 +15,32 @@ import mypix from './asset/Images/myPix.png'
 import OurLogo1 from './asset/Images/logo1.png'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
+import FileSaver from 'file-saver'
+
+
 const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
   const toggleState = () =>{
     setBgcolor(!bgcolor)
     console.log("Checked me")
+  }
+
+  const downloadFile = () =>{
+    FileSaver.saveAs(
+      process.env.PUBLIC_URL + "/resources/Oba.pdf",
+      "Obaloluwa_Resume.pdf"); 
+  }
+
+  const GithubLinks = () => {
+      window.open("https://github.com/obaloluwa28/", "_blank")
+  }
+
+  const TwitterLinks = () => {
+    window.open("https://twitter.com/oduyemiobalolu1", "_blank")
+  }
+
+  const LinkedlnLinks = () => {
+    window.open("https://www.linkedin.com/in/oduyemi-obaloluwa-gmnse-9a57861b2/", "_blank")
   }
 
   return (
@@ -41,11 +62,11 @@ const App = () => {
               <div id={bgcolor ? "p1" : "p1_"}>Hello I'm</div>
               <div id={bgcolor ? "p2" : "p2_"}>ODUYEMI OBALOLUWA</div>
               <div id={bgcolor ? "p3" : "p3_"}>FULL STACK WEB DEVELOPER</div>
-              <div id={bgcolor ? "p4" : "p4_"}><span>Download Resume</span></div>
+              <div id={bgcolor ? "p4" : "p4_"} onClick={downloadFile}><span>Download Resume</span></div>
               <div className="icon-box">
-                <BsGithub id={bgcolor ? "icons" : "icons_"}/>
-                <FaTwitterSquare id={bgcolor ? "icons" : "icons_"}/>
-                <BsLinkedin id={bgcolor ? "icons" : "icons_"}/>
+                <BsGithub name="github" id={bgcolor ? "icons" : "icons_"} onClick={GithubLinks}/>
+                <FaTwitterSquare name="twitter" id={bgcolor ? "icons" : "icons_"} onClick={TwitterLinks}/>
+                <BsLinkedin name="linkedln" id={bgcolor ? "icons" : "icons_"} onClick={LinkedlnLinks}/>
               </div>
             </div>
           </div>
