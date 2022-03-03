@@ -13,13 +13,19 @@ import vector2 from './asset/Images/vector2.png'
 import vector2_ from './asset/Images/vector2_.png'
 import mypix from './asset/Images/myPix.png'
 import OurLogo1 from './asset/Images/logo1.png'
+import Sendbut from './asset/Images/send.svg'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaTwitterSquare } from "react-icons/fa";
+import { GrSend } from "react-icons/gr";
+import { FaTwitterSquare, FaHandshake } from "react-icons/fa";
 import FileSaver from 'file-saver'
 
 
 const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
+  const [address, setAddress] = useState()
+  const [sendername, setSendername] = useState()
+  const [message, setMessage] = useState()
+
   const toggleState = () =>{
     setBgcolor(!bgcolor)
     console.log("Checked me")
@@ -42,6 +48,31 @@ const App = () => {
   const LinkedlnLinks = () => {
     window.open("https://www.linkedin.com/in/oduyemi-obaloluwa-gmnse-9a57861b2/", "_blank")
   }
+
+  const project1 = () => {
+    window.open("https://frc-attendance-monsys.herokuapp.com/", "_blank")
+  }
+
+  const project2 = () => {
+    window.open("https://sterling-smart-meter.herokuapp.com/", "_blank")
+  }
+
+  const project3 = () => {
+    window.open("https://inventory-systm.herokuapp.com/", "_blank")
+  }
+
+  const project4 = () => {
+    window.open("https://ktt-e-commerce-store.herokuapp.com/", "_blank")
+  }
+
+  const project5 = () => {
+    window.open("https://inventory-systm.herokuapp.com/", "_blank")
+  }
+
+  const project6 = () => {
+    window.open("https://ktt-e-commerce-store.herokuapp.com/", "_blank")
+  }
+
 
   return (
     <div className={bgcolor ? "AppContainer" : "AppContainer_inv"}>
@@ -164,7 +195,7 @@ const App = () => {
               <span id="sub_tag">Face Recognition Attendance Monitoring System</span>
               <span id="descptn">The project scans the face of student and marks him/her present for certain course</span>
               <div id="bps_mini">
-                <span id="ldemo">Live Demo</span>
+                <span id="ldemo" onClick={project1}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
@@ -173,7 +204,7 @@ const App = () => {
               <span id="sub_tag">EMS Energy Management System</span>
               <span id="descptn">The System Captures New Stocks, Knows the available stocks in the system, activates Point of Sales and View Transaction Records over a period</span>
               <div id="bps_mini">
-                <span id= "ldemo">Live Demo</span>
+                <span id= "ldemo" onClick={project2}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
@@ -182,7 +213,7 @@ const App = () => {
               <span id="sub_tag">Inventory Management System</span>
               <span id="descptn">The application track your goods throughout your entire supply chain, from purchasing to production to end sales. The application also keeps record which can be used to prepare various books of account</span>
               <div id="bps_mini1">
-                <span id="ldemo">Live Demo</span>
+                <span id="ldemo" onClick={project3}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
@@ -191,7 +222,7 @@ const App = () => {
               <span id="sub_tag">Ecommerce System</span>
               <span id="descptn">New Employee into an oragnization is captured into the system and attendance, performance, PayRoll System and evaluation of employee is done on system</span>
               <div id="bps_mini">
-                <span id= "ldemo">Live Demo</span>
+                <span id= "ldemo" onClick={project4}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
@@ -200,7 +231,7 @@ const App = () => {
               <span id="sub_tag">Employee Management System</span>
               <span id="descptn">New Employee into an oragnization is captured into the system and attendance, performance, PayRoll System and evaluation of employee is done on system</span>
               <div id="bps_mini">
-                <span id="ldemo">Live Demo</span>
+                <span id="ldemo" onClick={project5}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
@@ -209,12 +240,46 @@ const App = () => {
               <span id="sub_tag">IoT Home Automation System</span>
               <span id="descptn">The Project is aimed at controlling ones remote facility and Home Utilities on a button click. One can also view the facility remotely with IP Camera installed</span>
               <div id="bps_mini">
-                <span id="ldemo">Live Demo</span>
+                <span id="ldemo" onClick={project6}>Live Demo</span>
                 <BsGithub id="icons"/>
               </div>
             </div>
           </div>
           {bgcolor ? <img src={vector2} alt="vector2"/>:<img src={vector2_} alt="vector2"/>}
+        </div>
+      </div>
+
+      <div className="buttom-main-contain">
+        <div className="sideproj_title_contain" >
+          <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Get In Touch</span>
+        </div>
+        <div className="buttm-contain">
+          <div className={bgcolor ? "shakeicon" : "shakeicon_"}>
+            <FaHandshake id="shake-icon"/>
+            <span id="si-thnk">Thank You</span>
+            <span id="si-thnk-2">Any Question or Queries?</span>
+          </div>
+          <div className={bgcolor ? "emailmsgs" : "emailmsgs_"}>
+            <div className="top-container">
+              <div className={bgcolor ? "top-left" : "top-left_"}>
+                <span>Email</span>
+                <input type='email' name="email" value={address}  id="field"/>
+              </div>
+
+              <div className={bgcolor ? "top-right" : "top-right_"}>
+                <span>Name</span>
+                <input  type='text' name="email" value={sendername} id="field" />
+              </div>
+            </div>
+            <div className={bgcolor ? "mess-buttn" : "mess-buttn_"}>
+                <span>Message</span>
+                <textarea  type='text' name="email" value={message} id="field1" />
+            </div>
+            <div className="submit_but">
+              <img src={Sendbut} alt="sendicon" id="send_icon"/>
+              <input type="submit" id="submit-button"/>
+            </div>
+          </div>
         </div>
       </div>
 
