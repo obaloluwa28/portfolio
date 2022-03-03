@@ -7,6 +7,9 @@ import figma from './asset/Images/Figma.png'
 import react from './asset/Images/React.png'
 import backend from './asset/Images/Backend.png'
 import IOT from './asset/Images/IoT.png'
+import vector from './asset/Images/vector.png'
+import vector_ from './asset/Images/vector1.png'
+import mypix from './asset/Images/myPix.png'
 
 const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
@@ -87,10 +90,25 @@ const App = () => {
               </div>
             </div>
           </div>
-
-          <div id="aboutme_block">
-              
+        </div>
+      </div>
+      <div id="aboutme_block">
+          <div className='ABTme_title_container'><span className={bgcolor ? 'ABTme_title' : "ABTme_title_"}>About Me</span></div>
+            <div className='ABTme_body_container'>
+            {bgcolor ? <img src={vector} alt="altimg" /> : <img src={vector_} alt="altimg" />}
+            <img id="mypix" src={mypix} alt="mypix"/>
+            <div id="myprofile_container">
+              <span id='myprofiledetaile'>
+                Hi, I’m Oduyemi Obaloluwa, my journey in IT space began as an IoT Embedded System Engineer as a student Intern, and my first graduate Role as an IT project manager at Zigus Technologies Ltd; Designing Hardeware  automated systems.
+                The need for a software representation of these hardware solutions made me shapen my software design skills in React,HTML and CSS.
+                The need to store values of sensors and actuators from the hardware systems requires that i communicate with a database. I have developed several software and hardware side solutions. I currently work as a software and IoT Engineer at Sterling Tech and Data Science, Nigeria. 
+              </span>
+            </div>
           </div>
+      </div>
+      <div className="sideproj_container">
+        <div className="sideproj_title_contain" >
+          <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Side Projects</span>
         </div>
       </div>
     </div>
