@@ -160,9 +160,10 @@ const App = () => {
             <img id="mypix" src={mypix} alt="mypix"/>
             <div id="myprofile_container">
               <span id='myprofiledetaile'>
-                Hi, I’m Oduyemi Obaloluwa, my journey in IT space began as an IoT Embedded System Engineer as a student Intern, and my first graduate Role as an IT project manager at Zigus Technologies Ltd; Designing Hardeware  automated systems.
-                The need for a software representation of these hardware solutions made me shapen my software design skills in React,HTML and CSS.
-                The need to store values of sensors and actuators from the hardware systems requires that i communicate with a database. I have developed several software and hardware side solutions. I currently work as a software and IoT Engineer at Sterling Tech and Data Science, Nigeria. 
+                Hi, I’m Oduyemi Obaloluwa a First-Class graduate of Computer Engineering from Ladoke Akintola University of Technology, Nigeria. My journey in IT space began as an Embedded System student Intern, while my first graduate Role was as an IT project manager at Zigus Technologies Ltd, Designing Embedded Systems, automated and software Solutions.
+                I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
+                I'm very passionate about emerging technologies like 5G & IoT, Robotics & Autonomous Vehicles, Web 3.0 & Block-Chain.
+                I currently work as a Software Developer and IoT Embedded System Engineer at Sterling Tech and Data Science, Nigeria.
               </span>
             </div>
           </div>
