@@ -70,7 +70,7 @@ const App = () => {
   }
 
   const project6 = () => {
-    window.open("https://ktt-e-commerce-store.herokuapp.com/", "_blank")
+    window.open("https://iot-home-automate.herokuapp.com/", "_blank")
   }
 
 
