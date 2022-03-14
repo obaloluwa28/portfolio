@@ -5,7 +5,7 @@ import OurLogo from './asset/Images/Logo.png'
 import Sideimg from './asset/Images/Logo2.png'
 import figma from './asset/Images/Figma.png'
 import react from './asset/Images/React.png'
-import backend from './asset/Images/Backend.png'
+import backend from './asset/Images/nodejs.png'
 import IOT from './asset/Images/IoT.png'
 import vector from './asset/Images/vector.png'
 import vector_ from './asset/Images/vector1.png'
@@ -47,7 +47,7 @@ const App = () => {
   }
 
   const LinkedlnLinks = () => {
-    window.open("https://www.linkedin.com/in/oduyemi-obaloluwa-gmnse-9a57861b2/", "_blank")
+    window.open("https://www.linkedin.com/in/oduyemi-obaloluwa-9a57861b2/", "_blank")
   }
 
   const project1 = () => {
