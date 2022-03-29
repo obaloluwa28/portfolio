@@ -1044,11 +1044,9 @@
     line-height: 28px;
     margin-top: 5px;
   }
-
-  
 }
 
-@media screen and (min-height: 700px ) {
+@media screen and (max-width: 1000px) and (min-height: 700px ) {
   #myprofile_container{
     left: 10px;
     top: 320px;
