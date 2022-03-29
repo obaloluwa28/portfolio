@@ -714,5 +714,343 @@
   top: 29.62%;
   bottom: 29.62%;
   color: #FFFFFF;
+}
 
+.toggcontainer_2{
+  display:none
+}
+
+@media screen and (max-width: 1000px ) {
+  .navbarContainer, .navbarContainer_inv{
+    position: fixed;
+    width: 100px;
+    display: flex;
+    height: auto;
+    top: 100px;
+    left: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    box-shadow: none;
+    z-index: 20;
+  }
+
+  .imgContainer{
+    display:none;
+  }
+
+  .ulistedTabs, .ulistedTabs_inv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding: none;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: none;
+    right: none;
+  }
+
+  .toggcontainer, .toggcontainer_2{
+    display:block;
+    height: auto;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .toggcontainer_2_{
+    position: fixed;
+    top: 390px;
+  }
+  
+  .ulistedTabs > li, .ulistedTabs_inv > li{
+    width: 100%;
+    height: 10%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(277.23deg, #5B9CFD -8.72%, rgba(228, 235, 244, 0.84) 121.57%);
+    margin-bottom: 15px;
+  }
+  
+  .ulistedTabs > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .ulistedTabs_inv > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .ulistedTabs > li:hover{
+    box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.322);
+    -webkit-box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.322);
+    -moz-box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.322);
+  }
+  
+  .ulistedTabs_inv > li:hover{
+    box-shadow: -1px 1px 6px 0px rgba(255, 255, 255, 0.322);
+    -webkit-box-shadow: -1px 1px 6px 0px rgba(255, 255, 255, 0.322);
+    -moz-box-shadow: -1px 1px 6px 0px rgba(255, 255, 255, 0.322);
+  }
+
+
+
+  .TID_Container{
+    width: calc(100% - 60px);
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    margin: 0px 30px;
+    justify-content:center;
+  }
+
+  .TID_Box1, .TID_Box1_{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #aboutme_block{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  .ABTme_body_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  #myprofile_container{
+    position: absolute;
+    left: 0px;
+    top: 280px;
+    width: 90%;
+    height: auto;
+    margin: 0px 10px
+  }
+
+  #myprofiledetaile{
+    color: #ffffff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  
+  #mypix{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 110px;
+    top: 30px;
+  }
+
+  .main-box-contain{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+  }
+
+  .Box1{
+    margin: 0px 20px;
+    width: calc(100% - 40px);
+    height: 300px;
+    margin-top: 15px;
+  }
+
+  .buttom-main-contain{
+    margin-top: 95px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .buttm-contain{
+    padding: 0px 10px;
+    width: calc(100% - 20px);
+  }
+
+  .shakeicon, .shakeicon_{
+    display: none;
+  }
+  
+  .shakeicon_{
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .emailmsgs, .emailmsgs_{
+    position: none;
+    width: 100%;
+    padding: 10px 0px;
+    height: auto;
+    background: #FAFCFF;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .emailmsgs_{
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .top-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    padding: 10px 5px;
+    width: calc(100% - 10px);
+    height: auto;
+    left: 0px;
+    top: 0px;
+  }
+
+  .top-left, .top-left_, .top-right, .top-right_{
+    width: 100%;
+    height: auto;
+  }
+  
+  .top-left > span, .top-right > span, .mess-buttn > span, .top-left_ > span, .top-right_ > span, .mess-buttn_ > span{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .top-left_ > span, .top-right_ > span, .mess-buttn_ > span{
+    color: white;
+  }
+
+  .mess-buttn, .mess-buttn_{
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    width: calc(100% - 10px);
+    margin: 0px 5px;
+  }
+  
+  #field{
+    width: calc(100% - 10px);
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 0px 5px;
+  }
+
+  #field1{
+    width: calc(100% - 20px);
+    height: 150px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit_but{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 20px;
+    padding-right: 5px;
+    left: 0px;
+    top: 0px;
+  }
+
+  #send_icon{
+    width: 26px;
+    height: 19px;
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 80px;
+    bottom: 13px;
+    color: #FFFFFF;
+  }
+
+  .sideproj_title, .sideproj_title_, .ABTme_title, .ABTme_title_,  #sub_title, #sub_title_{
+    font-weight: 700;
+    font-size: 22px;
+  }
+  
+
+  #footer_img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyright{
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FAFCFF;
+  }
+
+  .sub_textContain{
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .myhome{
+    overflow: hidden;
+   }
+
+   #p1, #p1_{
+    width: 109px;
+    height: 24px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  #p2, #p2_{
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+  
+  #p3, #p3_{
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 5px;
+  }
+
+  
+}
+
+@media screen and (min-height: 700px ) {
+  #myprofile_container{
+    left: 10px;
+    top: 320px;
+  }
 }

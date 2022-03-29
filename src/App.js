@@ -19,6 +19,7 @@ import { GrSend } from "react-icons/gr";
 import { FaTwitterSquare, FaHandshake } from "react-icons/fa";
 import FileSaver from 'file-saver'
 import {Link} from 'react-scroll'
+import Togglevisible from './Components/Togglevisible/Togglevisible';
 
 
 const App = () => {
@@ -26,10 +27,15 @@ const App = () => {
   const [address, setAddress] = useState()
   const [sendername, setSendername] = useState()
   const [message, setMessage] = useState()
+  const [menuClick, setMenuClick] = useState(false)
 
   const toggleState = () =>{
     setBgcolor(!bgcolor)
     console.log("Checked me")
+  }
+
+  const toggleTogState = () =>{
+    setMenuClick(!menuClick)
   }
 
   const downloadFile = () =>{
@@ -78,15 +84,21 @@ const App = () => {
   return (
     <div className={bgcolor ? "AppContainer" : "AppContainer_inv"}>
       <div className={bgcolor ? "navbarContainer" : "navbarContainer_inv"}>
-        <div className="imgContainer"><img className="myimg" src={OurLogo} alt="Logo" /></div>
-        <ul className={bgcolor ? "ulistedTabs" : "ulistedTabs_inv"}>
+        {menuClick && <div className="imgContainer"><img className="myimg" src={OurLogo} alt="Logo" /></div>}
+        {menuClick && <ul className={bgcolor ? "ulistedTabs" : "ulistedTabs_inv"}>
           {/* <li><a href="#home">Home</a></li> */}
           <li><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
           <li><Link to="aboutme" spy={true} smooth={true}>About Me</Link></li>
           <li><Link to="project" spy={true} smooth={true}>Projects</Link></li>
           <li><Link to="contact" spy={true} smooth={true}>Contact</Link></li>
-        </ul>
-        <Togglebutton currentState={toggleState} />
+        </ul>}
+        {menuClick && <div className="toggcontainer">
+          <Togglebutton currentState={toggleState} />
+        </div>}
+
+        <div className= {menuClick ? "toggcontainer_2": "toggcontainer_2_"}>
+          <Togglevisible currentTogState={toggleTogState} />
+        </div>
       </div>
       <section id="home">
         <div className="myhome_container">
@@ -294,7 +306,7 @@ const App = () => {
       </section>
 
       <div className={bgcolor ? "foorter-container" : "foorter-container_"}>
-        <img src={OurLogo1} alt="Logo" />
+        <img id="footer_img" src={OurLogo1} alt="Logo" />
         <span className="copyright">Designed by Oduyemi Obaloluwa</span>
       </div>
     </div>
