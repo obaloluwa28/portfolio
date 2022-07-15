@@ -12,7 +12,7 @@
     position: relative;
     margin-right: 20px;
     width: 22%;
-    height: 270px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,6 +124,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
     padding-bottom: 30px;
+    position: relative;
   }
 
   .coursecard-container-blog{
@@ -201,6 +202,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   word-spacing: 2px;
+  color: white;
 }
 
 .bg-text-container{
@@ -216,6 +218,7 @@
   white-space: normal;
   letter-spacing: 1px;
   word-spacing: 2px;
+  color: white;
 }
 
 #bps_mini, #bps_mini1{
@@ -266,5 +269,36 @@
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover; 
-  
+}
+
+@media screen and (max-Width:850px) {
+  .TID_Box1, .TID_Box1_{
+    width: 100%;
+    height: 270px;
+    min-width: 170px;
+  }
+
+  #mypix{
+    position: absolute;
+    top: 20%;
+  }
+
+  #myprofile_container{
+    /* background-color: aqua; */
+    width: 90%;
+  }
+}
+
+@media screen and (max-Width:450px) {
+  #mypix{
+    position: absolute;
+    top: 25%;
+  }
+
+  #myprofiledetaile{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: normal;
+  }
+
 }

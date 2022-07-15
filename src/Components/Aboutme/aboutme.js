@@ -12,8 +12,7 @@ const Aboutme = () => {
                 <img id="mypix" src={mypix} alt="mypix"/>
                 <div id="myprofile_container">
                   <span id='myprofiledetaile'>
-                    Hi, I’m Oduyemi Obaloluwa a First-Class graduate of Computer Engineering from Ladoke Akintola University of Technology, Nigeria. My journey in IT space began as an Embedded System student Intern, while my first graduate Role was as an IT project manager at King's Techtronics Ltd, Designing Embedded Systems, automated and software Solutions.
-                    I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
+                    Hi, I’m Oduyemi Obaloluwa a First-Class graduate of Computer Engineering from Ladoke Akintola University of Technology, Nigeria. I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
                     I'm very passionate about emerging technologies like 5G & IoT, Robotics & Autonomous Vehicles, Web 3.0 & Block-Chain.
                     I currently work as a Software Engineer with Sabre Coporation - a foremost GDS Powering Travel solutions in the World.
                   </span>

@@ -266,7 +266,7 @@
     }
   }
 
-  @media screen and (max-Width: 650px) {
+  @media screen and (max-Width: 850px) {
     .ulistedTabs, .ulistedTabs_inv{
       display: none;
     }
@@ -276,19 +276,26 @@
       height: auto;
       position: relative;
     }
-  
-    /* .toggcontainer_2_{
-      position: fixed;
-      top: 390px;
-    } */
-
+    
     .TID_Container{
       /* width: 100%; */
-      height: 70vh;
+      height: fit-content;
       display: grid;
-      justify-content: center;
+      grid-template-columns: auto auto;
+      column-gap: 15px;
+      row-gap: 15px;
       align-items: center;
       padding: 0px 10px;
       /* background-color: blue; */
+    }
+  }
+
+  @media screen and (max-Width: 420px) { 
+    .TID_Container{
+      /* width: 100%; */
+      height: fit-content;
+      display: grid;
+      grid-template-columns: auto;
+      column-gap: 15px;
     }
   }

@@ -22,7 +22,7 @@ const JsonData = [
         liveurl: "https://ktt-e-commerce-store.herokuapp.com/"
     },{
         id: 4,
-        jtitle: "Face Recognition for Employee Management",
+        jtitle: "Biometric - Face Recognition for Employee Management ",
         content: "New Employee into an oragnization is captured into the system and attendance, performance, PayRoll System and evaluation of employee is done on system",
         imgurl: "https://img.freepik.com/free-vector/biometric-identification-scanners-background_1284-26513.jpg?t=st=1657809342~exp=1657809942~hmac=0fa2d31ba0e373cc5a9f9e36597f1376dbbfb192de1205bac438b6065a2e12de&w=740",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
