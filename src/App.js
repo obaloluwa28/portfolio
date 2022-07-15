@@ -113,7 +113,7 @@ const App = () => {
                 </div>
                 <div className='innder-div' style={{transform: `translate(-${activeIndex}px)`}}>
                     {incomingdata.map((item) =>(
-                      <Projectcard buttonclicked={buttnTrig} slideImageurl={item.imgurl} subtit={item.content} title={item.jtitle} github={item.github}/>
+                      <Projectcard buttonclicked={buttnTrig} liveurl={item.liveurl} slideImageurl={item.imgurl} subtit={item.content} title={item.jtitle} github={item.github}/>
                     ))}
                           
                 </div>

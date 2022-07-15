@@ -41,6 +41,11 @@
     width: 50px;
     height: 50px;
   }
+
+  #gihub-icons{
+    color: white;
+    font-size: 20px;
+  }
   
   .TID_mini_container{
     display: flex;

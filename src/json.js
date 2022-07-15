@@ -12,7 +12,7 @@ const JsonData = [
         content: "The System Captures New Stocks, Knows the available stocks in the system, activates Point of Sales and View Transaction Records over a period",
         imgurl: "https://img.freepik.com/free-vector/internet-things-iot-smart-connection-control-device-network-industry-resident-anywhere-anytime-anybody-any-business-with-internet-it-technology-futuristic-world_1150-61172.jpg?size=626&ext=jpg&uid=R75165962&ga=GA1.2.107027158.1657193171",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-        liveurl: "https://frc-attendance-monsys.herokuapp.com/"
+        liveurl: "https://sterling-smart-meter.herokuapp.com/"
     },{
         id: 3,
         jtitle: "Ecommerce Store",
