@@ -43,10 +43,6 @@ const App = () => {
     window.open("https://twitter.com/oduyemiobalolu1", "_blank")
   }
 
-
-
-
-
   const [activeIndex, setActiveIndex] = useState(0)
   const [move, setMove] = useState(true)
   const [move_, setMove_] = useState(false)
