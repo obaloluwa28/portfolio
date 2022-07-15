@@ -45,9 +45,9 @@ const JsonData = [
         id: 7,
         jtitle: "Online Flight Booking System",
         content: "Designed ",
-        imgurl: "https://img.freepik.com/free-photo/inventory-stock-manufacturing-assets-goods-concept_53876-133673.jpg?t=st=1657851329~exp=1657851929~hmac=d853071735823efae9f2417071041ef26f12719e6c72da4b1949fa0798b206c4&w=740",
+        imgurl: "https://img.freepik.com/free-vector/flight-booking-concept-illustration_114360-2213.jpg?t=st=1657899576~exp=1657900176~hmac=6582605d2773212924260c911b1ce82088cf6b2e4042c2b0037538afc4dc4017&w=740",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-        liveurl: "https://crypto-smart-io.herokuapp.com/"
+        liveurl: "https://obengine.herokuapp.com/"
     },
     
 ]
