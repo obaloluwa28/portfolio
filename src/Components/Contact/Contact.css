@@ -90,12 +90,16 @@
 
 }
 
-.submit_but{
+.submit_container{
     /* width: 100%; */
     margin: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.submit_but{
+    position: relative;
 }
 
 #shake-icon{
@@ -137,17 +141,6 @@
     padding: 8px 15px;
     text-align: right;
 }
-
-#send_icon{
-    width: 26px;
-    height: 19px;
-    /* position: absolute;
-    left: 8.79%;
-    right: 68.54%;
-    top: 29.62%;
-    bottom: 29.62%;
-    color: #FFFFFF; */
-  }
 
 @media screen and (max-width: 550px) {
     .shakeicon, .shakeicon_{

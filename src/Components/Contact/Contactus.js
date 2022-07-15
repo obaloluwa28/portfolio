@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Contact.css'
 import { FaHandshake } from "react-icons/fa";
-import Sendbut from '../../asset/Images/send.svg'
+import { RiSendPlaneFill } from "react-icons/ri";
 
 const Contactus = () => {
   const [toggle, setToggle] = useState(true)
@@ -55,9 +55,8 @@ const Contactus = () => {
                   <span id='label'>Message</span>
                   <textarea  type='text' onChange={handleChange} name="message" value={values.message} id="field1" />
               </div>
-              <div className="submit_but">
-                <img src={Sendbut} alt="sendicon" id="send_icon"/>
-                <input type="submit" id="submit-button"/>
+              <div className="submit_container">
+                  <input type="submit" id="submit-button"/>
               </div>
             </div>
           </div>

@@ -238,3 +238,28 @@
   color: white;
   text-decoration: none;
 }
+
+.sideproj_tw, .sideproj_tw_{
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.sideproj_tw_{
+  background-color: #0000;
+}
+
+.proj_img_container{
+  width: 50%;
+  height: 100%;
+  background-color: #5956FB;
+  /* background: url("../../asset/Images/facerec.jpg"); */
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}

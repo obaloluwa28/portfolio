@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './App.css';
 import Projectcard from './Components/Cards/Sideporject2';
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
+import Project_data from './Json2';
 
 // import { GrSend } from "react-icons/gr";
 import FileSaver from 'file-saver'
@@ -11,6 +12,7 @@ import Navbar from './Components/Navbar';
 import TopSection from './Components/TopSection';
 import JsonData from './json'
 import Contactus from './Components/Contact/Contactus';
+import Sideporject2 from './Components/Cards/Sideporject';
 
 let counter = 0;
 
@@ -49,6 +51,7 @@ const App = () => {
   const [move, setMove] = useState(true)
   const [move_, setMove_] = useState(false)
   const [incomingdata, setIncomingdata] = useState(JsonData);
+  const [incoming, setIncoming] = useState(Project_data);
   
   const countercheck = incomingdata.length - 3
 
@@ -100,9 +103,11 @@ const App = () => {
             <div className="sideproj_title_contain" >
               <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Side Projects</span>
             </div>
-            <div className='side-card-containers'>
-
-            </div>
+            {/* <div className='side-card-containers'>
+              {incoming.map((items) => (
+                <Sideporject2 myimage = {items.imgurl} />
+              ))} 
+            </div> */}
 
             <div id='blog-card-containers'>
               <div className='blog-card-containers'>
