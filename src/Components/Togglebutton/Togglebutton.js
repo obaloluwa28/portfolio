@@ -11,14 +11,14 @@ const Togglebutton = ({currentState}) => {
     }
 
     return (
-        <>
-            <div className= "toggle_contain" onClick={toggleState}>
+        <div className='navbar-contain'>
+            <div className= {modee ? "toggle_contain" : "toggle_contain_inv"} onClick={toggleState}>
                 {modee ? <span id="darkmode">DARK</span> : <span id="lightmode">LIGHT</span> }
             </div>
             <div className= "toggle_contain_scrn" onClick={toggleState}>
                 {modee ? <span id="darkmode"><BsMoonFill id="contrast_icon"/></span> : <span id="darkmode"><BiSun id="contrast_icon"/></span> }
             </div>
-        </>
+        </div>
         
     );
 }

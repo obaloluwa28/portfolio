@@ -1,0 +1,156 @@
+.buttom-main-contain{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.buttm-contain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shakeicon, .shakeicon_{
+    width: 300px;
+    min-width: 200px;
+    height: 400px;
+    background-color: #5B9CFD;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+  
+.shakeicon_{
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.emailmsgs, .emailmsgs_{
+    width: calc(60% - 40px);
+    min-width: 350px;
+    height: 460px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+}
+  
+.emailmsgs_{
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.top-container{
+    /* width: 100%; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 30px 30px 30px;
+}
+
+.top-left, .top-left_, .top-right, .top-right_{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+#label{
+    /* font-size: 17px; */
+    font-weight: 500;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.mess-buttn, .mess-buttn_{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 20px 30px;
+    /* background-color: blue; */
+    height: 50%;
+}
+
+#field1{
+    margin-top: 15px;
+    border-radius: 10px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: rgba(196, 196, 196, 0.2);
+    padding: 20px;
+}
+
+#field{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: rgba(196, 196, 196, 0.2);
+    margin-top: 15px;
+
+}
+
+.submit_but{
+    /* width: 100%; */
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#shake-icon{
+    width: 149px;
+    height: 89px;
+    color: white;
+}
+
+#si-thnk{
+    font-family: 'Domine', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 33px;
+}
+  
+#si-thnk-2{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 45px;
+}
+
+#submit-button{
+    background: linear-gradient(270deg, #5956FB 0%, rgba(89, 86, 251, 0) 100%);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 15px;
+    text-align: right;
+}
+
+#send_icon{
+    width: 26px;
+    height: 19px;
+    /* position: absolute;
+    left: 8.79%;
+    right: 68.54%;
+    top: 29.62%;
+    bottom: 29.62%;
+    color: #FFFFFF; */
+  }
+
+@media screen and (max-width: 550px) {
+    .shakeicon, .shakeicon_{
+        display: none;
+    }
+}
