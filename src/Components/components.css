@@ -240,6 +240,7 @@
     border-radius: 10px;
     margin-top: 30px;
     cursor: pointer;
+    text-decoration: none;
   }
   
   #p4 > span, #p4_ > span{
