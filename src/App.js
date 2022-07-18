@@ -45,7 +45,7 @@ const App = () => {
   }
 
   const [activeIndex, setActiveIndex] = useState(0)
-  const [move, setMove] = useState(true)
+  const [move, setMove] = useState(false)
   const [move_, setMove_] = useState(false)
   const [incomingdata, setIncomingdata] = useState(JsonData);
   const [incoming, setIncoming] = useState(Project_data);
@@ -57,13 +57,12 @@ const App = () => {
      
   }
 
+  // If Previous is Clicked
   const handlePrevious = () =>{
-      counter--;
-      if (counter === 0){
-          setActiveIndex(0)
-          setMove(true)
-          setMove_(false)
-          counter = 0;
+    counter--;
+    if (counter <= 0){
+        setActiveIndex(0)
+        counter = 0;      // Reset Counter
       } else {
           setActiveIndex(activeIndex - 400)
       }
@@ -71,10 +70,10 @@ const App = () => {
 
   const handleNext = () =>{
       counter++;
-      setActiveIndex(activeIndex + 400)
-      if(counter === countercheck) {
-          setMove(false)
-          setMove_(true)
+      if(counter <= countercheck) {
+        setActiveIndex(activeIndex + 400)
+      }else{
+        counter--;      // Reset Counter to initial state
       }
   }
 
@@ -120,8 +119,8 @@ const App = () => {
             <div id='blog-card-containers'>
               <div className='blog-card-containers'>
                 <div className="mtt-articles__swiper-buttons">
-                    <button className="swiper-button-prev" disabled={move} onClick={handlePrevious}><FaCaretLeft id='caret-icon'/></button>
-                    <button className="swiper-button-next" disabled={move_} onClick={handleNext}><FaCaretRight id='caret-icon' /></button>
+                    <button className="swiper-button-prev"  onClick={handlePrevious}><FaCaretLeft id='caret-icon'/></button>
+                    <button className="swiper-button-next" onClick={handleNext}><FaCaretRight id='caret-icon' /></button>
                 </div>
                 <div className='innder-div' style={{transform: `translate(-${activeIndex}px)`}}>
                     {incomingdata.map((item) =>(
