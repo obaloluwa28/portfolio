@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import FileSaver from 'file-saver'
 import { FaTwitterSquare, FaHandshake } from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -6,8 +6,14 @@ import Thingsido from './Cards/thingsido';
 import Sideimg from '../asset/Images/Logo2.png'
 import './components.css'
 
-const TopSection = () => {
-  const [toggle, setToggle] = useState(true)
+const TopSection = ({toggleState}) => {
+  console.log(`Now: ${toggleState}`)
+  const [toggle, setToggle] = useState(toggleState)
+  // setToggle(toggleState)
+
+  useEffect(() => {
+    setToggle(toggleState)
+})
 
   const GithubLinks = () => {
     window.open("https://github.com/obaloluwa28/", "_blank")
@@ -28,8 +34,8 @@ const LinkedlnLinks = () => {
   }
   return (
     <div className="myhome_container">
-            <div className='textContain'>
-              <div className='sub_textContain'>
+            <div className='textContain textContainmedia'>
+              <div className='sub_textContain sum_textContainmedia'>
                 <div id={toggle ? "p1" : "p1_"}>Hello I'm</div>
                 <div id={toggle ? "p2" : "p2_"}>ODUYEMI OBALOLUWA</div>
                 <div id={toggle ? "p3" : "p3_"}>FULL STACK WEB DEVELOPER</div>
@@ -40,7 +46,7 @@ const LinkedlnLinks = () => {
                   <BsLinkedin name="linkedln" id={toggle ? "icons" : "icons_"} onClick={LinkedlnLinks}/>
                 </div>
               </div>
-              <div id='top-image-container' />
+              {/* <div id='top-image-container' /> */}
             </div>
 
             <div className='things-ido'>

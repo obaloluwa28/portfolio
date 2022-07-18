@@ -1,0 +1,40 @@
+.barchart-container{
+    width: 100%;
+    height: 30px;
+    background-color: #eeee;
+    /* background-color: blue; */
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#sk-label-cntainer{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0px;
+    font-weight: 700;
+    color: white;
+    background-color: #5b9cfdab;
+}
+
+#sk-level-cntainer{
+    width: calc(100% - 200px);
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+}
+
+#level-indicator{
+    background-color: #5B9CFD;
+    /* width: 100%; */
+    height: 100%;
+}
+
+#sk-readings-cntainer{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0px;
+}

@@ -1,5 +1,5 @@
 .navbarContainer, .navbarContainer_inv{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 61px;
@@ -108,7 +108,7 @@
     background: url('../asset/Images/bkgrnd2.png');
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: contain; 
   }
 
   .TID_Container{
@@ -147,6 +147,11 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: url("../asset/Images/Logo3.png") no-repeat;
+    background-position: 100%; 
+    background-repeat: no-repeat;
+    background-size: contain;
     /* background-color: rgb(162, 165, 127); */
   }
   
@@ -156,52 +161,75 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    /* padding: 30px; */
     padding-left: 60px;
     background-color: transparent;
     /* background-color: brown; */
   }
 
-  #top-image-container{
-    width: 50%;
-    height: 100%;
-    background: url("../asset/Images/Logo2.png") no-repeat;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover; 
+  @media screen and (max-Width: 800px) {
+    .textContain, .textContainmedia{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: url("../asset/Images/Logo3.png") no-repeat;
+      background-position: 100%; 
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* background-color: rgb(162, 165, 127); */
+    }
+
+    .textContainmedia{
+      background: none;
+    }
+
+    .sub_textContain, .sum_textContainmedia{
+      width: 50%;
+      height: calc(100% - 60px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      background-color: transparent;
+    }
+
+    .sum_textContainmedia{
+      width: 100%;
+    }
   }
-  
+
   #p1, #p1_{
-    /* width: 109px; */
-    height: 24px;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 10px;
+    color: black;
   }
   
   #p2, #p2_{
     /* width: 504px; */
-    height: 48px;
     font-family: 'Domine', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    /* background-color: yellow; */
   }
   
   #p3, #p3_{
-    /* width: 303px; */
-    height: 28px;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
     line-height: 28px;
-    margin-top: 10px;
-    
+    margin-bottom: 10px;
+    color: black;
   }
   
   #p1_, #p2_, #p3_{

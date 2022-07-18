@@ -3,16 +3,17 @@ import './App.css';
 import Projectcard from './Components/Cards/Sideporject2';
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import Project_data from './Json2';
+import mypix from './asset/Images/myPix.png'
 
 // import { GrSend } from "react-icons/gr";
 import FileSaver from 'file-saver'
-import Aboutme from './Components/Aboutme/aboutme';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import TopSection from './Components/TopSection';
 import JsonData from './json'
 import Contactus from './Components/Contact/Contactus';
 import Sideporject2 from './Components/Cards/Sideporject';
+import Skills from './Components/Skills';
 
 let counter = 0;
 
@@ -49,7 +50,7 @@ const App = () => {
   const [incomingdata, setIncomingdata] = useState(JsonData);
   const [incoming, setIncoming] = useState(Project_data);
   
-  const countercheck = incomingdata.length - 3
+  const countercheck = incomingdata.length - 1
 
 
   const buttnTrig = () =>{
@@ -77,33 +78,44 @@ const App = () => {
       }
   }
 
+  const changeFunc = (income) =>{
+    console.log(`Income: ${income}`)
+    setBgcolor(income)
+  }
+
   return (
     <div className={bgcolor ? "AppContainer" : "AppContainer_inv"}>
       <div className='nav-container'>
-        <Navbar />
+        <Navbar changeState={changeFunc}/>
       </div>
       <div className='main-container'>
         <section id="home">
-          <TopSection />
+          <TopSection toggleState={bgcolor}/>
         </section>
 
         <section id="aboutme">
           <div id="aboutme_block">
               <div className='ABTme_title_container'><span className={bgcolor ? 'ABTme_title' : "ABTme_title_"}>About Me</span></div>
-              <Aboutme />
+              <div className='skills-contain'>
+                <div className='skills-contain-left'>
+                  <img id="mypixs" src={mypix} alt="mypix"/>
+                  <span id='aboutme-text'>I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
+                    I'm very passionate about emerging technologies like 5G & IoT, Robotics & Autonomous Vehicles, Web 3.0 & Block-Chain.
+                  </span>
+                </div>
+                <div className='skills-contain-right'>
+                  <Skills />
+                </div>
+              </div>
+              
           </div>
         </section>
 
         <section id="project">
           <div className="sideproj_container">
             <div className="sideproj_title_contain" >
-              <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Side Projects</span>
+              <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>Projects</span>
             </div>
-            {/* <div className='side-card-containers'>
-              {incoming.map((items) => (
-                <Sideporject2 myimage = {items.imgurl} />
-              ))} 
-            </div> */}
 
             <div id='blog-card-containers'>
               <div className='blog-card-containers'>
@@ -121,8 +133,11 @@ const App = () => {
             </div>
 
             <div className="buttom_side_proj">
-              <div className="bsp_mini_container">
-                
+              <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>In Development</span>
+              <div className='side-card-containers'>
+                {incoming.map((items) => (
+                  <Sideporject2 myimage = {items.imgurl} txttitle={items.jtitle} creator={items.content} />
+                ))} 
               </div>
             </div>
           </div>
@@ -133,8 +148,9 @@ const App = () => {
         </section>
       </div>
       
-      <div>
-      </div>
+      {/* <div> */}
+        <Footer />
+      {/* </div> */}
       
     </div>
   );

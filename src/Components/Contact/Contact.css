@@ -29,13 +29,13 @@
 
 .emailmsgs, .emailmsgs_{
     width: calc(60% - 40px);
-    min-width: 350px;
+    min-width: 320px;
     height: 460px;
     background: #fff;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     position: relative;
-    padding: 20px;
+    padding: 20px 10px;
 }
   
 .emailmsgs_{
@@ -140,6 +140,20 @@
     cursor: pointer;
     padding: 8px 15px;
     text-align: right;
+}
+
+@media screen and (max-Width: 700px) {
+    .submit_container{
+        margin: 0px 10px;
+    }
+
+    .top-container{
+        margin: 50px 10px 30px 10px;
+    }
+
+    .mess-buttn, .mess-buttn_{
+        margin: 10px 10px 20px 10px;
+    }
 }
 
 @media screen and (max-width: 550px) {

@@ -1,21 +1,22 @@
 import React, {useState} from 'react'
 import Togglebutton from './Togglebutton/Togglebutton'
 import Togglevisible from './Togglevisible/Togglevisible'
-import OurLogo from '../asset/Images/Logo.png'
 import {Link} from 'react-scroll'
 import './components.css'
 
-const Navbar = () => {
+const Navbar = ({changeState}) => {
     const [toggle, setToggle] = useState(true)
     const [menuClick, setMenuClick] = useState(true)
 
-    const toggleState = () =>{
+    const toggleState = (passedstate) =>{
       setToggle(!toggle)
       console.log("Checked me")
+      changeState(passedstate)
     }
 
     const toggleTogState = () =>{
       setMenuClick(!menuClick)
+      console.log("Checked me Out")
     }
 
   return (
