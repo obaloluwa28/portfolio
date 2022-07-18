@@ -59,7 +59,6 @@
   }
 
   #TID_mini_sub, #TID_mini_sub_{
-    font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -82,7 +81,6 @@
   }
 
   #text_descrpt, #text_descrpt_{
-    font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -109,7 +107,6 @@
   #myprofiledetaile{
     /* color: #582222; */
     color: white;
-    font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: 1px;

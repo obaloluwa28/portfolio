@@ -59,7 +59,6 @@
 #label{
     /* font-size: 17px; */
     font-weight: 500;
-    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .mess-buttn, .mess-buttn_{
@@ -109,7 +108,6 @@
 }
 
 #si-thnk{
-    font-family: 'Domine', serif;
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -119,7 +117,6 @@
 }
   
 #si-thnk-2{
-    font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -135,7 +132,6 @@
     border: none;
     outline: none;
     color: white;
-    font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 15px;
     cursor: pointer;
     padding: 8px 15px;
