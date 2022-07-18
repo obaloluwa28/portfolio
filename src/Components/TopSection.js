@@ -41,7 +41,8 @@ const LinkedlnLinks = () => {
                 <div id={toggle ? "p1" : "p1_"}>Hello I'm</div>
                 <div id={toggle ? "p2" : "p2_"}>ODUYEMI OBALOLUWA</div>
                 <div id={toggle ? "p3" : "p3_"}>FULL STACK WEB DEVELOPER</div>
-                <div id={toggle ? "p4" : "p4_"} onClick={downloadFile}><span>View Resume</span></div>
+                <a href='https://drive.google.com/file/d/1pKf3aRb3NCl3WtD-9Wc9Q4hsaiT6Eujc/view' target="_blank" rel="noopener noreferrer" id={toggle ? "p4" : "p4_"}><span>View Resume</span></a>
+                {/* onClick={downloadFile} */}
                 <div className="icon-box">
                   <BsGithub name="github" id={toggle ? "icons" : "icons_"} onClick={GithubLinks}/>
                   <FaTwitterSquare name="twitter" id={toggle ? "icons" : "icons_"} onClick={TwitterLinks}/>
