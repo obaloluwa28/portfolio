@@ -16,10 +16,10 @@ const Footer = ({text, buttonclkd}) => {
             <div id='footer-logo' />
             <span id='foot-slogan'>Living, learning, & leveling up one day at a time.</span>
             <div className="footer-icons-container">
-              <span className='foot-ico-cont'><FaTwitter id='foot-ico'/></span>
-              <span className='foot-ico-cont'><FaLinkedinIn id='foot-ico'/></span>
-              <span className='foot-ico-cont'><AiOutlineGithub id='foot-ico'/></span>
-              <span className='foot-ico-cont'><HiOutlineMail id='foot-ico'/></span>
+              <a className='foot-ico-cont' href='https://twitter.com/ODUYEMIOBALOLU1'><FaTwitter id='foot-ico' target="_blank" rel="noopener noreferrer"/></a>
+              <a className='foot-ico-cont' href='https://www.linkedin.com/in/oduyemi-obaloluwa-9a57861b2/' target="_blank" rel="noopener noreferrer"><FaLinkedinIn id='foot-ico'/></a>
+              <a className='foot-ico-cont' href='https://github.com/obaloluwa28' target="_blank" rel="noopener noreferrer"><AiOutlineGithub id='foot-ico'/></a>
+              <a className='foot-ico-cont' href='mailto:oooduyemi@gmail.com' target="_blank" rel="noopener noreferrer"><HiOutlineMail id='foot-ico'/></a>
             </div>
             <span id='copyright-footer'>Obaloluwa Oduyemi &copy; {currDateIndex}</span>
             <div id='return-top-button'><Link to="home" spy={true} smooth={true}><FiChevronsUp id='rtb-icon'/></Link></div>

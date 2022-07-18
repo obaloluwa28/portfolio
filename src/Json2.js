@@ -19,9 +19,9 @@ const Project_data =[
         liveurl: "https://ktt-e-commerce-store.herokuapp.com/"
     },{
         id: 4,
-        jtitle: "Resume Maker",
+        jtitle: "Resume/Cover Letter Generator",
         content: "React/GO/Mongo",
-        imgurl: "https://img.freepik.com/free-photo/inventory-stock-manufacturing-assets-goods-concept_53876-133673.jpg?t=st=1657851329~exp=1657851929~hmac=d853071735823efae9f2417071041ef26f12719e6c72da4b1949fa0798b206c4&w=740",
+        imgurl: "https://img.freepik.com/free-psd/elegant-cv-template-with-cover-letter-template_1435-1636.jpg?t=st=1658107823~exp=1658108423~hmac=a5a26400ef2227259e342621666ddc0c5287cf30e0a8d70c88f9dfa0dae1da5c&w=740",
         liveurl: "https://ktt-e-commerce-store.herokuapp.com/"
     }
 ] 

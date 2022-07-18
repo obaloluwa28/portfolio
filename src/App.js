@@ -50,7 +50,7 @@ const App = () => {
   const [incomingdata, setIncomingdata] = useState(JsonData);
   const [incoming, setIncoming] = useState(Project_data);
   
-  const countercheck = incomingdata.length - 1
+  const countercheck = incomingdata.length - 3
 
 
   const buttnTrig = () =>{
@@ -73,7 +73,8 @@ const App = () => {
       if(counter <= countercheck) {
         setActiveIndex(activeIndex + 400)
       }else{
-        counter--;      // Reset Counter to initial state
+        counter = 0;      // Reset Counter to initial state
+        setActiveIndex(0)
       }
   }
 

@@ -41,7 +41,7 @@ const LinkedlnLinks = () => {
                 <div id={toggle ? "p1" : "p1_"}>Hello I'm</div>
                 <div id={toggle ? "p2" : "p2_"}>ODUYEMI OBALOLUWA</div>
                 <div id={toggle ? "p3" : "p3_"}>FULL STACK WEB DEVELOPER</div>
-                <div id={toggle ? "p4" : "p4_"} onClick={downloadFile}><span>Download Resume</span></div>
+                <div id={toggle ? "p4" : "p4_"} onClick={downloadFile}><span>View Resume</span></div>
                 <div className="icon-box">
                   <BsGithub name="github" id={toggle ? "icons" : "icons_"} onClick={GithubLinks}/>
                   <FaTwitterSquare name="twitter" id={toggle ? "icons" : "icons_"} onClick={TwitterLinks}/>

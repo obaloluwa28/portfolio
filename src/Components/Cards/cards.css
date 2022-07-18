@@ -248,20 +248,21 @@
 }
 
 .sideproj_tws, .sideproj_tws_{
-  /* min-width: 130px; */
-  /* width: 100%; */
   min-width: 150px;
   width: 350px;
   height: 320px;
   min-height: 250px;
   background-color: transparent;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin-right: 5px;
 }
 
 .sideproj_tws_{
   background-color: #0000;
+}
+
+.sideproj_tws:hover, .sideproj_tws_:hover{
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .proj_textContainer{
@@ -285,7 +286,7 @@
   opacity: 1;
   box-sizing: border-box;
   height: 100%;
-  background-color: #f8f8f9;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
