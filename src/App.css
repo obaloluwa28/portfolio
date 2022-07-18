@@ -37,7 +37,7 @@
 }
 
 .AppContainer_inv{
-  background-color: #000000;
+  background-color: #301818;
 }
 
 .main-container{
@@ -96,10 +96,14 @@
   margin-bottom: 20px;
 }
 
-#aboutme-text{
+#aboutme-text, #aboutme-text_{
   letter-spacing: 1px;
   word-spacing: 2px;
   text-align: center;
+}
+
+#aboutme-text_{
+  color: white;
 }
 
 .ABTme_title_container{

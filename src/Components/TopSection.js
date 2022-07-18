@@ -5,10 +5,12 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Thingsido from './Cards/thingsido';
 import Sideimg from '../asset/Images/Logo2.png'
 import './components.css'
+import ThingsIdo_data from '../json3';
 
 const TopSection = ({toggleState}) => {
   console.log(`Now: ${toggleState}`)
   const [toggle, setToggle] = useState(toggleState)
+  const [incoming, setIncoming] = useState(ThingsIdo_data)
   // setToggle(toggleState)
 
   useEffect(() => {
@@ -54,13 +56,9 @@ const LinkedlnLinks = () => {
                 <span id={toggle ? "sub_title":"sub_title_"}>Things I do</span>
               </div>
               <div className="TID_Container">
-                <Thingsido heading="Design" text="My Love for creative UI designs made me choose Figma as the best choice for me" imgid={1} />
-
-                <Thingsido heading="FrontEnd" text="My HTML and CSS skills as well as JavaScript are top-notch" imgid={2} />
-
-                <Thingsido heading="BackEnd" text="Fell in Love with Laravel among other backend framework like C# .NET and NodeJs due to its Easy to use feature" imgid={3} />
-
-                <Thingsido heading="Internet of Things" text="Seeing how hardware systems communicate with one another and the enviroment through sensors gives me great pleasure" imgid={4} />
+                {incoming.map((items) => (
+                  <Thingsido colorChange={toggle} heading={items.jhead} text={items.content} imgid={items.id} />
+                ))}
               </div>
             </div>
         </div>

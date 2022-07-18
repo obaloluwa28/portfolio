@@ -98,7 +98,7 @@ const App = () => {
               <div className='skills-contain'>
                 <div className='skills-contain-left'>
                   <img id="mypixs" src={mypix} alt="mypix"/>
-                  <span id='aboutme-text'>I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
+                  <span id={bgcolor ? 'aboutme-text' : 'aboutme-text_'} >I'm an innovative purpose-driven professional with experience in web-design, development and software development across industries. Equipped with record of success in consistently identifying and providing the technological needs of companies through ingenious innovations.
                     I'm very passionate about emerging technologies like 5G & IoT, Robotics & Autonomous Vehicles, Web 3.0 & Block-Chain.
                   </span>
                 </div>
@@ -146,10 +146,8 @@ const App = () => {
             <Contactus />
         </section>
       </div>
-      
-      {/* <div> */}
-        <Footer />
-      {/* </div> */}
+    
+      <Footer />
       
     </div>
   );

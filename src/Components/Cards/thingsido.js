@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import figma from '../../asset/Images/Figma.png'
 import reacts from '../../asset/Images/React.png'
 import backend from '../../asset/Images/nodejs.png'
@@ -12,9 +12,15 @@ const imgurls = [
     {id: 4, tag: IOT},
   ]
 
-const Thingsido = ({heading, text, imgid}) => {
+const Thingsido = ({colorChange, heading, text, imgid}) => {
+  console.log(`colorChange: ${colorChange}`)
     const imgpath = (imgurls.find(m => m.id === imgid)).tag
-    const [toggle, setBgcolor] = useState(true)
+    const [toggle, setBgcolor] = useState(colorChange)
+
+    useEffect(() => {
+      setBgcolor(colorChange)
+    })
+
   return (
     <div className= {toggle ? "TID_Box1" : "TID_Box1_"}>
         <div className='img-logo-container'>
