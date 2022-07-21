@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import FileSaver from 'file-saver'
-import { FaTwitterSquare, FaHandshake } from "react-icons/fa";
+import { FaTwitterSquare} from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Thingsido from './Cards/thingsido';
 import Sideimg from '../asset/Images/Logo2.png'
@@ -13,7 +13,7 @@ const TopSection = ({toggleState}) => {
   const [incoming, setIncoming] = useState(ThingsIdo_data)
   // setToggle(toggleState)
 
-  useEffect(() => {
+useEffect(() => {
     setToggle(toggleState)
 })
 

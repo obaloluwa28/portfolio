@@ -140,6 +140,7 @@
   }
 
   .textContain{
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -183,6 +184,7 @@
     }
 
     .sub_textContain, .sum_textContainmedia{
+      position: relative;
       width: 50%;
       height: calc(100% - 60px);
       display: flex;

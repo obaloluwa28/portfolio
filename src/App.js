@@ -1,12 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css';
 import Projectcard from './Components/Cards/Sideporject2';
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
+import { BiLike } from "react-icons/bi";
 import Project_data from './Json2';
 import mypix from './asset/Images/myPix.png'
-
-// import { GrSend } from "react-icons/gr";
-import FileSaver from 'file-saver'
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import TopSection from './Components/TopSection';
@@ -14,47 +12,38 @@ import JsonData from './json'
 import Contactus from './Components/Contact/Contactus';
 import Sideporject2 from './Components/Cards/Sideporject';
 import Skills from './Components/Skills';
+import axios from 'axios'
 
 let counter = 0;
 
 const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
-  const [menuClick, setMenuClick] = useState(false)
-
-  const toggleState = () =>{
-    setBgcolor(!bgcolor)
-    console.log("Checked me")
-  }
-
-  const toggleTogState = () =>{
-    setMenuClick(!menuClick)
-  }
-
-  const downloadFile = () =>{
-    FileSaver.saveAs(
-      process.env.PUBLIC_URL + "/resources/Oba.pdf",
-      "Obaloluwa_Resume.pdf"); 
-  }
-
-  const GithubLinks = () => {
-      window.open("https://github.com/obaloluwa28/", "_blank")
-  }
-
-  const TwitterLinks = () => {
-    window.open("https://twitter.com/oduyemiobalolu1", "_blank")
-  }
-
+  const [likes, setLikes] = useState()
   const [activeIndex, setActiveIndex] = useState(0)
-  const [move, setMove] = useState(false)
-  const [move_, setMove_] = useState(false)
   const [incomingdata, setIncomingdata] = useState(JsonData);
   const [incoming, setIncoming] = useState(Project_data);
   
   const countercheck = incomingdata.length - 3
 
+  useEffect(() => {
+    getViewResponse();
+  }, [])
+
+  const getViewResponse = async () =>{
+    let response = await axios.get("http://localhost:5000/getlikes")
+    console.log(response.data.results[0].Likes)
+    setLikes(response.data.results[0].Likes)
+  }
+
+  const clickLike = async () =>{
+    setLikes(likes+1)
+    const obj = {mylike: likes}
+    console.log(obj)
+    await axios.post("http://localhost:5000/Updateviews", obj)
+  }
 
   const buttnTrig = () =>{
-     
+    
   }
 
   // If Previous is Clicked
@@ -150,6 +139,12 @@ const App = () => {
     
       <Footer />
       
+      <div id='lv-countainer'>
+        <div id='likes-counter' onClick={clickLike}>
+          <BiLike id='likeicon'/>
+          <span>{likes}</span>
+        </div>
+      </div>
     </div>
   );
 }
