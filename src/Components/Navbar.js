@@ -8,6 +8,7 @@ const Navbar = ({changeState}) => {
     const [toggle, setToggle] = useState(true)
     const [menuClick, setMenuClick] = useState(true)
     const [togMenu, setTogMenu] = useState(true)
+    const [toggles, setToggles] = useState(true)
 
     const toggleState = (passedstate) =>{
       setToggle(!toggle)
@@ -21,6 +22,10 @@ const Navbar = ({changeState}) => {
       setTogMenu(!togMenu)
     }
 
+    const toggleTogSt = () =>{
+      setToggles(!toggles)
+    }
+
   return (
     <div className={toggle ? "navbarContainer" : "navbarContainer_inv"}>
         {menuClick && <div className="imgContainer" />}
@@ -28,10 +33,10 @@ const Navbar = ({changeState}) => {
           <div className={togMenu ? 'right-container' : 'right-container-inv'}>
             {menuClick && <ul className={toggle ? "ulistedTabs" : "ulistedTabs_inv"}>
               {/* <li><a href="#home">Home</a></li> */}
-              <li><Link id='test' activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
-              <li><Link id='test' to="aboutme" spy={true} smooth={true}>About Me</Link></li>
-              <li><Link id='test' to="project" spy={true} smooth={true}>Projects</Link></li>
-              <li><Link id='test' to="contact" spy={true} smooth={true}>Contact</Link></li>
+              <li><Link onClick={toggleTogSt} id='test' activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
+              <li><Link onClick={toggleTogSt} id='test' to="aboutme" spy={true} smooth={true}>About Me</Link></li>
+              <li><Link onClick={toggleTogSt} id='test' to="project" spy={true} smooth={true}>Projects</Link></li>
+              <li><Link onClick={toggleTogSt} id='test' to="contact" spy={true} smooth={true}>Contact</Link></li>
             </ul>}
           </div>
 
@@ -41,7 +46,7 @@ const Navbar = ({changeState}) => {
             </div>}
           
             <div className= {menuClick ? "toggcontainer_2": "toggcontainer_2_"}>
-              <Togglevisible currentTogState={toggleTogState} />
+              <Togglevisible currentTogState={toggleTogState} mytoggle={toggles}/>
             </div>
           </div>
         

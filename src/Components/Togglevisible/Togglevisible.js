@@ -3,8 +3,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import "../Togglebutton/togglebuttn.css"
 
-const Togglevisible = ({currentTogState}) => {
-    const [modee, setModee] = useState(true)
+const Togglevisible = ({currentTogState, mytoggle}) => {
+    console.log(`mytoggle ${mytoggle}`)
+    const [modee, setModee] = useState(mytoggle)
     
     const toggleState = () =>{
         currentTogState(setModee(!modee))
