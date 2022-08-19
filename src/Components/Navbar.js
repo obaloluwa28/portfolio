@@ -7,6 +7,7 @@ import './components.css'
 const Navbar = ({changeState}) => {
     const [toggle, setToggle] = useState(true)
     const [menuClick, setMenuClick] = useState(true)
+    const [togMenu, setTogMenu] = useState(true)
 
     const toggleState = (passedstate) =>{
       setToggle(!toggle)
@@ -15,31 +16,33 @@ const Navbar = ({changeState}) => {
     }
 
     const toggleTogState = () =>{
-      setMenuClick(!menuClick)
+      // setMenuClick(!menuClick)
       console.log("Checked me Out")
+      setTogMenu(!togMenu)
     }
 
   return (
     <div className={toggle ? "navbarContainer" : "navbarContainer_inv"}>
         {menuClick && <div className="imgContainer" />}
 
-        <div className='right-container'>
-          {menuClick && <ul className={toggle ? "ulistedTabs" : "ulistedTabs_inv"}>
-            {/* <li><a href="#home">Home</a></li> */}
-            <li><Link activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
-            <li><Link to="aboutme" spy={true} smooth={true}>About Me</Link></li>
-            <li><Link to="project" spy={true} smooth={true}>Projects</Link></li>
-            <li><Link to="contact" spy={true} smooth={true}>Contact</Link></li>
-          </ul>}
+          <div className={togMenu ? 'right-container' : 'right-container-inv'}>
+            {menuClick && <ul className={toggle ? "ulistedTabs" : "ulistedTabs_inv"}>
+              {/* <li><a href="#home">Home</a></li> */}
+              <li><Link id='test' activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
+              <li><Link id='test' to="aboutme" spy={true} smooth={true}>About Me</Link></li>
+              <li><Link id='test' to="project" spy={true} smooth={true}>Projects</Link></li>
+              <li><Link id='test' to="contact" spy={true} smooth={true}>Contact</Link></li>
+            </ul>}
+          </div>
 
-          {menuClick && <div className="toggcontainer">
-            <Togglebutton currentState={toggleState} />
-          </div>}
-
-        </div>
-        
-          <div className= {menuClick ? "toggcontainer_2": "toggcontainer_2_"}>
-            <Togglevisible currentTogState={toggleTogState} />
+          <div className='portfolio-nav-right'>
+            {menuClick && <div className="toggcontainer">
+              <Togglebutton currentState={toggleState} />
+            </div>}
+          
+            <div className= {menuClick ? "toggcontainer_2": "toggcontainer_2_"}>
+              <Togglevisible currentTogState={toggleTogState} />
+            </div>
           </div>
         
       </div>
