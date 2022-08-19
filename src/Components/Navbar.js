@@ -24,6 +24,7 @@ const Navbar = ({changeState}) => {
 
     const toggleTogSt = () =>{
       setToggles(!toggles)
+      setTogMenu(!togMenu)
     }
 
   return (
