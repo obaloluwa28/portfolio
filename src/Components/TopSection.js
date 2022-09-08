@@ -1,5 +1,5 @@
-import React,{useEffect, useState} from 'react'
-import FileSaver from 'file-saver'
+import React,{useState} from 'react'
+// import FileSaver from 'file-saver'
 import { FaTwitterSquare} from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Thingsido from './Cards/thingsido';
@@ -9,13 +9,13 @@ import ThingsIdo_data from '../json3';
 
 const TopSection = ({toggleState}) => {
   console.log(`Now: ${toggleState}`)
-  const [toggle, setToggle] = useState(toggleState)
+  const [toggle] = useState(toggleState)
   const [incoming] = useState(ThingsIdo_data)
   // setToggle(toggleState)
 
-useEffect(() => {
-    setToggle(toggleState)
-})
+// useEffect(() => {
+//     setToggle(toggleState)
+// })
 
   const GithubLinks = () => {
     window.open("https://github.com/obaloluwa28/", "_blank")
