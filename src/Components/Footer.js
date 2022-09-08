@@ -7,7 +7,7 @@ import { FiChevronsUp } from "react-icons/fi";
 import {Link} from 'react-scroll'
 
 const Footer = ({text, buttonclkd}) => {
-    const [toggle, setToggle] = useState(buttonclkd)
+    const [toggle] = useState(buttonclkd)
     const mydate = new Date()
     const currDateIndex = (mydate.getFullYear()).toString()
   return (

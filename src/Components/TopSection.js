@@ -3,14 +3,14 @@ import FileSaver from 'file-saver'
 import { FaTwitterSquare} from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Thingsido from './Cards/thingsido';
-import Sideimg from '../asset/Images/Logo2.png'
+// import Sideimg from '../asset/Images/Logo2.png'
 import './components.css'
 import ThingsIdo_data from '../json3';
 
 const TopSection = ({toggleState}) => {
   console.log(`Now: ${toggleState}`)
   const [toggle, setToggle] = useState(toggleState)
-  const [incoming, setIncoming] = useState(ThingsIdo_data)
+  const [incoming] = useState(ThingsIdo_data)
   // setToggle(toggleState)
 
 useEffect(() => {
@@ -29,11 +29,11 @@ const LinkedlnLinks = () => {
   window.open("https://www.linkedin.com/in/oduyemi-obaloluwa-9a57861b2/", "_blank")
 }
 
-  const downloadFile = () =>{
-    FileSaver.saveAs(
-      process.env.PUBLIC_URL + "/resources/Oba.pdf",
-      "Obaloluwa_Resume.pdf"); 
-  }
+  // const downloadFile = () =>{
+  //   FileSaver.saveAs(
+  //     process.env.PUBLIC_URL + "/resources/Oba.pdf",
+  //     "Obaloluwa_Resume.pdf"); 
+  // }
   return (
     <div className="myhome_container">
             <div className='textContain textContainmedia'>

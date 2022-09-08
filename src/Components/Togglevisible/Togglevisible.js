@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaTimes } from "react-icons/fa";
 import "../Togglebutton/togglebuttn.css"
 
 const Togglevisible = ({currentTogState, mytoggle}) => {

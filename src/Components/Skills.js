@@ -3,7 +3,7 @@ import Barcharts from './Barchart/Barcharts'
 import Skills_data from '../jsondata'
 
 const Skills = () => {
-    const [incomingdata, setIncomingdata] = useState(Skills_data)
+    const [incomingdata] = useState(Skills_data)
   return (
     <div className='skills-container'>
         {incomingdata.map((items) => (
