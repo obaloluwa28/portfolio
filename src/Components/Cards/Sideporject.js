@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import './cards.css'
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+// import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Sideporject2 = ({myimage, txttitle, creator}) => {
-    const [toggle, setToggle] = useState(true)
+    const [toggle] = useState(true)
 
   return (
     <div className={toggle ? "sideproj_tws" : "sideproj_tws_"}>

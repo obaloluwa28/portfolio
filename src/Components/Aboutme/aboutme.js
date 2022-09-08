@@ -1,11 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../Cards/cards.css'
 import mypix from '../../asset/Images/myPix.png'
-import vector from '../../asset/Images/vector.png'
-import vector_ from '../../asset/Images/vector2_.png'
 
 const Aboutme = () => {
-  const [toggle, setToggle] = useState(true)
   return (
     <div className='Aboutme_body_container'>
               {/* {toggle ? <img src={vector} alt="altimg" /> : <img src={vector_} alt="altimg" />} */}

@@ -6,7 +6,7 @@ import './components.css'
 
 const Navbar = ({changeState}) => {
     const [toggle, setToggle] = useState(true)
-    const [menuClick, setMenuClick] = useState(true)
+    const [menuClick] = useState(true)
     const [togMenu, setTogMenu] = useState(true)
     const [toggles, setToggles] = useState(true)
 

@@ -1,10 +1,9 @@
 import React,{useState} from 'react'
 import './Contact.css'
 import { FaHandshake } from "react-icons/fa";
-import { RiSendPlaneFill } from "react-icons/ri";
 
 const Contactus = () => {
-  const [toggle, setToggle] = useState(true)
+  const [toggle] = useState(true)
   const [values, setValues] = useState({
     email: "",
     sender: "",

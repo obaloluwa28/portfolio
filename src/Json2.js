@@ -20,6 +20,12 @@ const Project_data =[
     },{
         id: 4,
         jtitle: "Resume/Cover Letter Generator",
+        content: "React/NodeJS/SQL",
+        imgurl: "https://img.freepik.com/free-psd/elegant-cv-template-with-cover-letter-template_1435-1636.jpg?t=st=1658107823~exp=1658108423~hmac=a5a26400ef2227259e342621666ddc0c5287cf30e0a8d70c88f9dfa0dae1da5c&w=740",
+        liveurl: "https://ktt-e-commerce-store.herokuapp.com/"
+    },{
+        id: 4,
+        jtitle: "Employee Enrollment Portal",
         content: "React/GO/Mongo",
         imgurl: "https://img.freepik.com/free-psd/elegant-cv-template-with-cover-letter-template_1435-1636.jpg?t=st=1658107823~exp=1658108423~hmac=a5a26400ef2227259e342621666ddc0c5287cf30e0a8d70c88f9dfa0dae1da5c&w=740",
         liveurl: "https://ktt-e-commerce-store.herokuapp.com/"

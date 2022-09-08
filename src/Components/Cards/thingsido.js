@@ -19,7 +19,7 @@ const Thingsido = ({colorChange, heading, text, imgid}) => {
 
     useEffect(() => {
       setBgcolor(colorChange)
-    })
+    },[])
 
   return (
     <div className= {toggle ? "TID_Box1" : "TID_Box1_"}>

@@ -20,8 +20,8 @@ const App = () => {
   const [bgcolor, setBgcolor] = useState(true)
   const [likes, setLikes] = useState()
   const [activeIndex, setActiveIndex] = useState(0)
-  const [incomingdata, setIncomingdata] = useState(JsonData);
-  const [incoming, setIncoming] = useState(Project_data);
+  const [incomingdata] = useState(JsonData);
+  const [incoming] = useState(Project_data);
   
   const countercheck = incomingdata.length - 3
 
