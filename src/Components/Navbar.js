@@ -24,7 +24,7 @@ const Navbar = ({changeState}) => {
 
     const toggleTogSt = () =>{
       setToggles(!toggles)
-      setTogMenu(!togMenu)
+      // setTogMenu(!togMenu)
     }
 
   return (
@@ -37,6 +37,7 @@ const Navbar = ({changeState}) => {
               <li><Link onClick={toggleTogSt} id='test' activeClass="active" to="home" spy={true} smooth={true}>Home</Link></li>
               <li><Link onClick={toggleTogSt} id='test' to="aboutme" spy={true} smooth={true}>About Me</Link></li>
               <li><Link onClick={toggleTogSt} id='test' to="project" spy={true} smooth={true}>Projects</Link></li>
+              <li><Link onClick={toggleTogSt} id='test' to="project" spy={true} smooth={true}>Blog</Link></li>
               <li><Link onClick={toggleTogSt} id='test' to="contact" spy={true} smooth={true}>Contact</Link></li>
             </ul>}
           </div>

@@ -22,7 +22,7 @@ const Projectcard = ({slideImageurl, subtit, title, github, liveurl, buttonclick
             </div>
             <div id="bps_mini">
                 <a id= "ldemo" href={liveurl} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href={github} target="_blank" rel="noopener noreferrer"><BsGithub id="gihub-icons"/></a>
+                {/* <a href={github} target="_blank" rel="noopener noreferrer"><BsGithub id="gihub-icons"/></a> */}
             </div>
         </div>
     </div>
