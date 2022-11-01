@@ -13,6 +13,7 @@ import Contactus from './Components/Contact/Contactus';
 import Sideporject2 from './Components/Cards/Sideporject';
 import Skills from './Components/Skills';
 import axios from 'axios'
+import FeedbackContainer from './Components/Feedback/FeedbackContainer';
 
 let counter = 0;
 
@@ -130,6 +131,10 @@ const App = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        <section id="feedback">
+          <FeedbackContainer />
         </section>
 
         <section id="contact">

@@ -1,6 +1,6 @@
 import React from 'react'
 import './cards.css'
-import { BsGithub } from "react-icons/bs";
+// import { BsGithub } from "react-icons/bs";
 
 const Projectcard = ({slideImageurl, subtit, title, github, liveurl, buttonclicked}) => {
     console.log(`obaloluwa:${slideImageurl}`)
