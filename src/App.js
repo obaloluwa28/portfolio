@@ -94,7 +94,7 @@ const App = () => {
                   </span>
                 </div>
                 <div className='skills-contain-right'>
-                  <Skills />
+                  <Skills toggleState={bgcolor}/>
                 </div>
               </div>
               
@@ -134,15 +134,15 @@ const App = () => {
         </section>
 
         <section id="feedback">
-          <FeedbackContainer />
+          <FeedbackContainer toggleState={bgcolor}/>
         </section>
 
         <section id="contact">
-            <Contactus />
+            <Contactus toggleState={bgcolor}/>
         </section>
       </div>
     
-      <Footer />
+      <Footer toggleState={bgcolor}/>
       
       <div id='lv-countainer'>
         <div id='likes-counter' onClick={clickLike}>

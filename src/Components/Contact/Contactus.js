@@ -1,14 +1,18 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import './Contact.css'
 import { FaHandshake } from "react-icons/fa";
 
-const Contactus = () => {
-  const [toggle] = useState(true)
+const Contactus = ({toggleState}) => {
+  const [toggle, setToggle] = useState(true)
   const [values, setValues] = useState({
     email: "",
     sender: "",
     message: "",
   })
+
+  useEffect(() => {
+    setToggle(toggleState)
+  }, [toggleState])
 
   const handleChange = (e) =>{
     if(e.target.name === "email"){
@@ -41,18 +45,18 @@ const Contactus = () => {
             <div className={toggle ? "emailmsgs" : "emailmsgs_"}>
               <div className="top-container">
                 <div className={toggle ? "top-left" : "top-left_"}>
-                  <span id='label'>Email</span>
-                  <input type='email' onChange={handleChange} name="email" value={values.email}  id="field"/>
+                  <span id={toggle ? 'label' : 'label_'}>Email</span>
+                  <input type='email' onChange={handleChange} name="email" value={values.email} id={toggle ? 'field' : 'field_'}/>
                 </div>
 
                 <div className={toggle ? "top-right" : "top-right_"}>
-                  <span id='label'>Name</span>
-                  <input  type='text' onChange={handleChange} name="sendername" value={values.sender} id="field" />
+                  <span id={toggle ? 'label' : 'label_'}>Name</span>
+                  <input  type='text' onChange={handleChange} name="sendername" value={values.sender} id={toggle ? 'field' : 'field_'} />
                 </div>
               </div>
               <div className={toggle ? "mess-buttn" : "mess-buttn_"}>
-                  <span id='label'>Message</span>
-                  <textarea  type='text' onChange={handleChange} name="message" value={values.message} id="field1" />
+                  <span id={toggle ? 'label' : 'label_'}>Message</span>
+                  <textarea  type='text' onChange={handleChange} name="message" value={values.message} id={toggle ? 'field1' : 'field1_'} />
               </div>
               <div className="submit_container">
                   <input type="submit" id="submit-button"/>

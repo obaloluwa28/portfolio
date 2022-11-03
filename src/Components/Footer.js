@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../App.css'
 import { FaTwitter, FaLinkedinIn} from "react-icons/fa";
 import { HiOutlineMail} from "react-icons/hi";
@@ -6,10 +6,16 @@ import { AiOutlineGithub} from "react-icons/ai";
 import { FiChevronsUp } from "react-icons/fi";
 import {Link} from 'react-scroll'
 
-const Footer = ({text, buttonclkd}) => {
-    const [toggle] = useState(buttonclkd)
-    const mydate = new Date()
-    const currDateIndex = (mydate.getFullYear()).toString()
+const Footer = ({toggleState}) => {
+  
+  const mydate = new Date()
+  const [toggle, setToggle] = useState(true)
+  const currDateIndex = (mydate.getFullYear()).toString()
+
+  useEffect(() => {
+    setToggle(toggleState)
+  }, [toggleState])
+
   return (
     <div className={toggle ? "footer-container" : "footer-container_"}>
         <div className="footer-icons">

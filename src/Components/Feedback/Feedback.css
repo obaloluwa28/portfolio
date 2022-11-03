@@ -35,6 +35,10 @@
     margin-top: 20px;
 }
 
+.oba-feeback-top-contn > #fbk1tit_, .oba-feeback-top-contn > #fbk1_{
+    color: white;
+}
+
 .oba-feeback-container{
     width: 43vw;
     min-width: 300px;

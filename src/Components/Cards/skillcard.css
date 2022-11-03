@@ -25,3 +25,24 @@
     font-weight: 500;
     margin-top: 10px;
 }
+
+/* Skills Component */
+.skills-container{
+    /* background-color: aqua; */
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+}
+
+#labels, #labels_{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #5B9CFD;
+    margin-bottom: 25px;
+}
+
+#labels_{
+    color: white;
+}

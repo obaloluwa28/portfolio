@@ -24,7 +24,7 @@
 }
   
 .shakeicon_{
-    background: rgba(255, 255, 255, 0.22);
+    background: rgba(31, 116, 243, 0.22);
 }
 
 .emailmsgs, .emailmsgs_{
@@ -39,7 +39,7 @@
 }
   
 .emailmsgs_{
-    background: rgba(255, 255, 255, 0.22);
+    background: rgba(31, 116, 243, 0.22);
 }
 
 .top-container{
@@ -61,6 +61,10 @@
     font-weight: 500;
 }
 
+#label_{
+    color: white;
+}
+
 .mess-buttn, .mess-buttn_{
     display: flex;
     flex-direction: column;
@@ -69,7 +73,7 @@
     height: 50%;
 }
 
-#field1{
+#field1, #field1_{
     margin-top: 15px;
     border-radius: 10px;
     height: 100%;
@@ -79,14 +83,21 @@
     padding: 20px;
 }
 
-#field{
+#field1_{
+    color: white;
+}
+
+#field, #field_{
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
     border: none;
     background: rgba(196, 196, 196, 0.2);
     margin-top: 15px;
+}
 
+#field_{
+    color: white;
 }
 
 .submit_container{
