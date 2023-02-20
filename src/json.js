@@ -9,7 +9,7 @@ const JsonData = [
     },{
         id: 2,
         jtitle: "EMS Energy Management System",
-        content: "The application helps real-estate administrators captures readings from smart Energy, water and gas meters of Tenants and displays consumption on the dashboard, meter can be remotely controlled and vend for on the system.",
+        content: "The application helps readings from smart Energy, water and gas meters of clients and displays consumption on the dashboard.",
         imgurl: "https://img.freepik.com/free-vector/internet-things-iot-smart-connection-control-device-network-industry-resident-anywhere-anytime-anybody-any-business-with-internet-it-technology-futuristic-world_1150-61172.jpg?size=626&ext=jpg&uid=R75165962&ga=GA1.2.107027158.1657193171",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://63a460166fbc162ad244c849--thriving-duckanoo-29cf4c.netlify.app/"
@@ -22,19 +22,30 @@ const JsonData = [
         liveurl: "https://incandescent-gnome-30af84.netlify.app/"
     },{
         id: 5,
-        jtitle: "EMR Software",
+        jtitle: "EMR - Electronic Medical Record",
         content: "An Electronic Medical Record Web application for managing Doctor Patient Relationship",
-        imgurl: "https://img.freepik.com/free-photo/inventory-stock-manufacturing-assets-goods-concept_53876-133673.jpg?t=st=1657851329~exp=1657851929~hmac=d853071735823efae9f2417071041ef26f12719e6c72da4b1949fa0798b206c4&w=740",
+        imgurl: "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://magenta-cat-ccde1e.netlify.app/"
-    },{
-        id: 4,
-        jtitle: "Biometric - Face Recognition for Employee Management ",
-        content: "New Employee into an oragnization is captured into the system and attendance, performance, PayRoll System and evaluation of employee is done on system",
-        imgurl: "https://img.freepik.com/free-vector/biometric-identification-scanners-background_1284-26513.jpg?t=st=1657809342~exp=1657809942~hmac=0fa2d31ba0e373cc5a9f9e36597f1376dbbfb192de1205bac438b6065a2e12de&w=740",
+    },
+    {
+        id: 6,
+        jtitle: "Sabre Website ",
+        content: "Website for sabre centra and west africa",
+        imgurl: "https://images.pexels.com/photos/1098745/pexels-photo-1098745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-        liveurl: "https://inventory-systm.herokuapp.com/"
-    }
+        liveurl: "https://cute-cassata-0c6fbd.netlify.app/"
+    },
+
+    // {
+    //     id: 4,
+    //     jtitle: "Biometric - Face Recognition for Employee Management ",
+    //     content: "New Employee into an oragnization is captured into the system and attendance, performance, PayRoll System and evaluation of employee is done on system",
+    //     imgurl: "https://img.freepik.com/free-vector/biometric-identification-scanners-background_1284-26513.jpg?t=st=1657809342~exp=1657809942~hmac=0fa2d31ba0e373cc5a9f9e36597f1376dbbfb192de1205bac438b6065a2e12de&w=740",
+    //     github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+    //     liveurl: "https://inventory-systm.herokuapp.com/"
+    // },
+    
     // ,{
     //     id: 6,
     //     jtitle: "Photo Gallery",

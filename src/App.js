@@ -108,7 +108,7 @@ const App = () => {
             </div>
 
             <div id='blog-card-containers'>
-              <div className='blog-card-containers'>
+              <div className={bgcolor ? 'blog-card-containers': 'blog-card-containers_'}>
                 <div className="mtt-articles__swiper-buttons">
                     <button className="swiper-button-prev"  onClick={handlePrevious}><FaCaretLeft id='caret-icon'/></button>
                     <button className="swiper-button-next" onClick={handleNext}><FaCaretRight id='caret-icon' /></button>

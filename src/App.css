@@ -236,6 +236,17 @@
   background-size: cover; 
 }
 
+#blog-card-containers_{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./asset/Images/vector1.png");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
 .blog-card-containers{
   /* background-color: aqua; */
   max-width: 1152px;
