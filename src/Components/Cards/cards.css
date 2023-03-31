@@ -133,11 +133,13 @@
   .coursecard-container-blog{
     overflow: hidden;
     border-radius: 10px;
-    height: 70vh;
-    width: 350px;
-    min-width: 250px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    height: 60vh;
+    /* width: 300px; */
+    min-width: 280px;
+    /* width: 40%; */
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +161,7 @@
 .imgdiv-container{
   width: 100%;
   height: 100%;
-  background-position: center; 
+  background-position: cover; 
   background-repeat: no-repeat;
   background-size: cover; 
   -webkit-transition: all .5s;
@@ -170,27 +172,27 @@
 
 .imgdiv-container-contain{
   width: 100%;
-  height: 50%;
+  height: 45%;
   overflow: hidden;
   background-color: #0808086e;
 }
 
 .cc-card-body-blog{
   display: flex;
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5px 10px;
-  height: 50%;
+  padding: 5px 0px;
+  height: 55%;
+  /* background-color: aqua; */
 }
 
 .bg-text-container_{
   width: 100%;
-  height: 50%;
-  margin: 20px 0px 10px 0px;
+  min-height: 15%;
+  margin: 10px 0px;
   /* inline-size: 159px; */
-  /* background-color: green; */
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-all;
@@ -198,11 +200,10 @@
 }
 
 #bg-name{
-  font-size: 17px;
+  font-size: 16px;
   margin: 5px 0px;
   font-weight: 700;
-  letter-spacing: 1px;
-  word-spacing: 2px;
+  letter-spacing: 0.8px;
   color: white;
 }
 
@@ -218,8 +219,9 @@
   text-overflow: ellipsis;
   white-space: normal;
   letter-spacing: 1px;
-  word-spacing: 2px;
+  word-spacing: 1.5px;
   color: white;
+  font-size: 14px;
 }
 
 #bps_mini, #bps_mini1{
@@ -236,7 +238,6 @@
 
 #ldemo{
   width: 89px;
-  height: 40px;
   background: linear-gradient(270deg, #5956FB 0%, rgba(89, 86, 251, 0.35) 100%);
   border-radius: 10px;
   display: flex;
@@ -246,6 +247,9 @@
   cursor: pointer;
   color: white;
   text-decoration: none;
+  font-size: 13px;
+  padding: 8px 0px;
+  font-weight: 600;
 }
 
 .sideproj_tws, .sideproj_tws_{

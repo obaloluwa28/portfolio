@@ -14,6 +14,13 @@ const JsonData = [
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://63a460166fbc162ad244c849--thriving-duckanoo-29cf4c.netlify.app/"
     },{
+        id: 4,
+        jtitle: "Performance Appraisal Application",
+        content: "Performance Appraisal is an application use to access staffs performance based on set Key Performance Index-KPI ",
+        imgurl: "https://cdn.educba.com/academy/wp-content/uploads/2019/09/Performance-Appraisal-1.1...png",
+        github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+        liveurl: "https://fluffy-choux-a9a629.netlify.app/"
+    },{
         id: 3,
         jtitle: "Ecommerce Store",
         content: "An E-commerce platform where Items can be pruchased a and orders can be made",

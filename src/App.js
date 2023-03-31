@@ -14,6 +14,9 @@ import Sideporject2 from './Components/Cards/Sideporject';
 import Skills from './Components/Skills';
 import axios from 'axios'
 import FeedbackContainer from './Components/Feedback/FeedbackContainer';
+import { Responsive } from './responsive/responsive';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 let counter = 0;
 
@@ -27,7 +30,8 @@ const App = () => {
   const countercheck = incomingdata.length - 3
 
   useEffect(() => {
-    getViewResponse();
+    getViewResponse(); 
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, [])
 
   const getViewResponse = async () =>{
@@ -109,16 +113,21 @@ const App = () => {
 
             <div id='blog-card-containers'>
               <div className={bgcolor ? 'blog-card-containers': 'blog-card-containers_'}>
-                <div className="mtt-articles__swiper-buttons">
+                {/* <div className="mtt-articles__swiper-buttons">
                     <button className="swiper-button-prev"  onClick={handlePrevious}><FaCaretLeft id='caret-icon'/></button>
                     <button className="swiper-button-next" onClick={handleNext}><FaCaretRight id='caret-icon' /></button>
                 </div>
                 <div className='innder-div' style={{transform: `translate(-${activeIndex}px)`}}>
                     {incomingdata.map((item) =>(
                       <Projectcard buttonclicked={buttnTrig} liveurl={item.liveurl} slideImageurl={item.imgurl} subtit={item.content} title={item.jtitle} github={item.github}/>
-                    ))}
-                          
-                </div>
+                    ))}  
+                </div> */}
+              
+                <Carousel slidesToSlide= {2} infinite={true} responsive={Responsive}> 
+                  {incomingdata.map((item, index) => (
+                    <Projectcard key={index} buttonclicked={buttnTrig} liveurl={item.liveurl} slideImageurl={item.imgurl} subtit={item.content} title={item.jtitle} github={item.github}/>    
+                  ))}
+                </Carousel>
               </div>
             </div>
 
