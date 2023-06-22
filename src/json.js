@@ -13,21 +13,32 @@ const JsonData = [
         imgurl: "https://img.freepik.com/free-vector/internet-things-iot-smart-connection-control-device-network-industry-resident-anywhere-anytime-anybody-any-business-with-internet-it-technology-futuristic-world_1150-61172.jpg?size=626&ext=jpg&uid=R75165962&ga=GA1.2.107027158.1657193171",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://63a460166fbc162ad244c849--thriving-duckanoo-29cf4c.netlify.app/"
-    },{
+    },
+    {
+        id: 3,
+        jtitle: "Airline Incentive Application",
+        content: "An incentive portal developed credit travelers booking on SabreGDS application with the aim of driving sales in central and west-africa",
+        imgurl: "https://images.pexels.com/photos/1098745/pexels-photo-1098745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+        liveurl: "https://master--ubiquitous-hummingbird-885b48.netlify.app/"
+    },
+    {
         id: 4,
         jtitle: "Performance Appraisal Application",
         content: "Performance Appraisal is an application use to access staffs performance based on set Key Performance Index-KPI ",
         imgurl: "https://cdn.educba.com/academy/wp-content/uploads/2019/09/Performance-Appraisal-1.1...png",
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://fluffy-choux-a9a629.netlify.app/"
-    },{
-        id: 3,
-        jtitle: "Ecommerce Store",
-        content: "An E-commerce platform where Items can be pruchased a and orders can be made",
-        imgurl: "https://img.freepik.com/premium-vector/3d-online-shopping-social-media-mobile-applications-websites-concepts_131114-30.jpg?size=626&ext=jpg&ga=GA1.2.107027158.1657193171",
-        github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-        liveurl: "https://incandescent-gnome-30af84.netlify.app/"
-    },{
+    },
+    // {
+    //     id: 3,
+    //     jtitle: "Ecommerce Store",
+    //     content: "An E-commerce platform where Items can be pruchased a and orders can be made",
+    //     imgurl: "https://img.freepik.com/premium-vector/3d-online-shopping-social-media-mobile-applications-websites-concepts_131114-30.jpg?size=626&ext=jpg&ga=GA1.2.107027158.1657193171",
+    //     github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+    //     liveurl: "https://incandescent-gnome-30af84.netlify.app/"
+    // }
+    {
         id: 5,
         jtitle: "EMR - Electronic Medical Record",
         content: "An Electronic Medical Record Web application for managing Doctor Patient Relationship",
@@ -35,14 +46,14 @@ const JsonData = [
         github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
         liveurl: "https://magenta-cat-ccde1e.netlify.app/"
     },
-    {
-        id: 6,
-        jtitle: "Sabre Website ",
-        content: "Website for sabre centra and west africa",
-        imgurl: "https://images.pexels.com/photos/1098745/pexels-photo-1098745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-        liveurl: "https://cute-cassata-0c6fbd.netlify.app/"
-    },
+    // {
+    //     id: 6,
+    //     jtitle: "Sabre Website ",
+    //     content: "Website for sabre centra and west africa",
+    //     imgurl: "https://images.pexels.com/photos/1098745/pexels-photo-1098745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //     github: "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+    //     liveurl: "https://cute-cassata-0c6fbd.netlify.app/"
+    // },
 
     // {
     //     id: 4,

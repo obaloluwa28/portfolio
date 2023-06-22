@@ -49,11 +49,11 @@ const Skills_data =[
         lvlWidth: "50%",
         iconnum: 10
     },
-    {
-        lvlLabel: "PHP Laravel",
-        lvlWidth: "50%",
-        iconnum: 11
-    },
+    // {
+    //     lvlLabel: "PHP Laravel",
+    //     lvlWidth: "50%",
+    //     iconnum: 11
+    // },
     // {
     //     lvlLabel: "GO Lang",
     //     lvlWidth: "50%",
@@ -69,6 +69,16 @@ const Skills_data =[
         lvlWidth: "90%",
         iconnum: 14
     },
+    {
+        lvlLabel: "FastAPI",
+        lvlWidth: "50%",
+        iconnum: 15
+    },
+    {
+        lvlLabel: "Django",
+        lvlWidth: "50%",
+        iconnum: 16
+    }
 ] 
 
 export default Skills_data
