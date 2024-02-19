@@ -10,16 +10,19 @@ const Projectcard = ({slideImageurl, subtit, title, github, liveurl, buttonclick
     }
   return (
     <div className='coursecard-container-blog' onClick={registeredClick}>
-        <div className='imgdiv-container-contain'>
+        <div className='imgdiv-container-contain h-[200px]'>
             <div className='imgdiv-container' style={{ backgroundImage: `url(${slideImageurl})`}}/>
         </div>
-        <div className='cc-card-body-blog'>
-            <div className='bg-text-container_'>
-                <span id='bg-name'>{title}</span>
+        <div className='cc-card-body-blog p-2'>
+            <div className='w-full flex flex-col gap-1 h-[180px]'>
+                <div className='bg-text-container_ h-[30px] truncate text-center px-1 rounded-[5px]'>
+                    <span id='bg-name'>{title}</span>
+                </div>
+                <div className='bg-text-container h-[150px] truncate'>
+                    <span id='bg-title'>{subtit}</span>
+                </div>
             </div>
-            <div className='bg-text-container'>
-                <span id='bg-title'>{subtit}</span>
-            </div>
+
             <div id="bps_mini">
                 <a id= "ldemo" href={liveurl} target="_blank" rel="noopener noreferrer">Live Demo</a>
                 {/* <a href={github} target="_blank" rel="noopener noreferrer"><BsGithub id="gihub-icons"/></a> */}

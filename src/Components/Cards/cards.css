@@ -172,26 +172,25 @@
 
 .imgdiv-container-contain{
   width: 100%;
-  height: 45%;
+  /* height: 45%; */
   overflow: hidden;
   background-color: #0808086e;
 }
 
 .cc-card-body-blog{
   display: flex;
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px); */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 5px 0px;
-  height: 55%;
+  /* padding: 5px 0px; */
+  /* height: 55%; */
   /* background-color: aqua; */
 }
 
 .bg-text-container_{
   width: 100%;
-  min-height: 15%;
-  margin: 10px 0px;
+  /* min-height: 15%; */
   /* inline-size: 159px; */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -209,9 +208,9 @@
 
 .bg-text-container{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   /* background-color: blue; */
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .bg-text-container > #bg-title{
