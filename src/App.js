@@ -31,6 +31,7 @@ const App = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [incomingdata] = useState(JsonData);
   const [incoming] = useState(Project_data);
+  const [images, setImages] = useState('')
 
   const countercheck = incomingdata.length - 3;
 
@@ -52,7 +53,9 @@ const App = () => {
     await axios.post("http://localhost:5000/Updateviews", obj);
   };
 
-  const buttnTrig = () => {};
+  const buttnTrig = (imgurlprops) => {
+    setImages(imgurlprops)
+  };
 
   // If Previous is Clicked
   const handlePrevious = () => {
@@ -79,6 +82,10 @@ const App = () => {
     console.log(`Income: ${income}`);
     setBgcolor(income);
   };
+
+  const handleClose = () =>{
+    setImages('')
+  }
 
   return (
     <div
@@ -200,15 +207,18 @@ const App = () => {
         </div>
       </div>
 
-      {/* <div className="w-full h-full z-20 flex justify-center items-center absolute bg-[#ccc]">
-        <div className="w-full min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative">
-          <AiOutlineCloseCircle className="sticky right-0" size={35} />
+      {images !== '' && <div className="w-full h-[100vh] z-20 flex justify-center top-0 items-center fixed bg-[#ccc]">
+        <div className="w-[80%] h-[90%] min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative" onMouseLeave={handleClose}>
+          <div className="w-full flex items-center justify-end">
+            <AiOutlineCloseCircle size={35} className="cursor-pointer" onClick={handleClose}/>
+          </div>
           <img
-            src="https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/kira_knwbjv.png"
+            src={images}
             alt="myimage"
+            className="w-full h-full"
           />
         </div>
-      </div> */}
+      </div>}
     </div>
   );
 };

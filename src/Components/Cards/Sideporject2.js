@@ -6,11 +6,11 @@ const Projectcard = ({slideImageurl, subtit, title, github, liveurl, buttonclick
     console.log(`obaloluwa:${slideImageurl}`)
 
     const registeredClick = () =>{
-        buttonclicked(true)
+        buttonclicked(slideImageurl)
     }
   return (
-    <div className='coursecard-container-blog' onClick={registeredClick}>
-        <div className='imgdiv-container-contain h-[200px]'>
+    <div className='coursecard-container-blog'>
+        <div className='imgdiv-container-contain h-[200px]' onClick={() => registeredClick(slideImageurl)} onMouseEnter={() => registeredClick(slideImageurl)} onMouseLeave={() => registeredClick('')}>
             <div className='imgdiv-container' style={{ backgroundImage: `url(${slideImageurl})`}}/>
         </div>
         <div className='cc-card-body-blog p-2'>
