@@ -85,7 +85,7 @@ const JsonData = [
     content:
       "The Project is aimed at controlling ones remote facility and Home Utilities on a button click. One can also view the facility remotely with IP Camera installed",
     imgurl:
-      "https://img.freepik.com/free-vector/smart-house-remote-control-cartoon_33099-2040.jpg?size=626&ext=jpg&ga=GA1.2.107027158.1657193171",
+      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708687191/Staff%20Portal/homeauto1_auwl7w.png",
     github:
       "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
     liveurl:

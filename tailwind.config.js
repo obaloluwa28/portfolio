@@ -11,7 +11,8 @@ module.exports = {
       screens: {
         "1000px": "1050px",
         "1100px": "1110px",
-        "800px": "800px",
+        "mobileview" :  {max: "800px"},
+        "micro_mobileview" :  {max: "350px"},
         "1300px": "1300px",
         "400px":"400px"
       },

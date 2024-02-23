@@ -208,14 +208,14 @@ const App = () => {
       </div>
 
       {images !== '' && <div className="w-full h-[100vh] z-20 flex justify-center top-0 items-center fixed bg-[#ccc]">
-        <div className="w-[80%] h-[90%] min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative" onMouseLeave={handleClose}>
+        <div className="w-[80%] h-fill max-h-[90%] min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative mobileview:h-[50%] micro_mobileview:h-[35%]" onMouseLeave={handleClose}>
           <div className="w-full flex items-center justify-end">
-            <AiOutlineCloseCircle size={35} className="cursor-pointer" onClick={handleClose}/>
+            <AiOutlineCloseCircle size={20} className="cursor-pointer" onClick={handleClose}/>
           </div>
           <img
             src={images}
             alt="myimage"
-            className="w-full h-full"
+            className="w-fit h-full"
           />
         </div>
       </div>}
