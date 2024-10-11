@@ -31,7 +31,7 @@ const App = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [incomingdata] = useState(JsonData);
   const [incoming] = useState(Project_data);
-  const [images, setImages] = useState('')
+  const [images, setImages] = useState("");
 
   const countercheck = incomingdata.length - 3;
 
@@ -54,7 +54,7 @@ const App = () => {
   };
 
   const buttnTrig = (imgurlprops) => {
-    setImages(imgurlprops)
+    setImages(imgurlprops);
   };
 
   // If Previous is Clicked
@@ -83,9 +83,9 @@ const App = () => {
     setBgcolor(income);
   };
 
-  const handleClose = () =>{
-    setImages('')
-  }
+  const handleClose = () => {
+    setImages("");
+  };
 
   return (
     <div
@@ -207,18 +207,23 @@ const App = () => {
         </div>
       </div>
 
-      {images !== '' && <div className="w-full h-[100vh] z-20 flex justify-center top-0 items-center fixed bg-[#ccc]">
-        <div className="w-[80%] h-fill max-h-[90%] min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative mobileview:h-[50%] micro_mobileview:h-[35%]" onMouseLeave={handleClose}>
-          <div className="w-full flex items-center justify-end">
-            <AiOutlineCloseCircle size={20} className="cursor-pointer" onClick={handleClose}/>
+      {images !== "" && (
+        <div className="w-full h-[100vh] z-20 flex justify-center top-0 items-center fixed bg-[#ccc]">
+          <div
+            className="w-[80%] h-fill max-h-[90%] min-h-[screen] bg-[white] flex flex-col p-2 gap-2 relative mobileview:h-[50%] micro_mobileview:h-[35%]"
+            onMouseLeave={handleClose}
+          >
+            <div className="w-full flex items-center justify-end">
+              <AiOutlineCloseCircle
+                size={20}
+                className="cursor-pointer"
+                onClick={handleClose}
+              />
+            </div>
+            <img src={images} alt="myimage" className="w-fit h-full" />
           </div>
-          <img
-            src={images}
-            alt="myimage"
-            className="w-fit h-full"
-          />
         </div>
-      </div>}
+      )}
     </div>
   );
 };
