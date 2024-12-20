@@ -1,5 +1,4 @@
 const JsonData = [
-  
   {
     id: 1,
     jtitle: "Ecommerce Store",
@@ -7,34 +6,44 @@ const JsonData = [
       "This project is a multi vendor E-commerce application where Items can be pruchased a and orders can be made. New sellers can signup and upload products to be viewed by user in the store front. Payment can be made online or via pay on delivery.",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/kira_knwbjv.png",
-    github:
-      "",
-    liveurl: "https://kirastores.com/",
+    github: "",
+    liveurl: "https://stores.kirasurf.com/",
+  },
+  {
+    id: 5,
+    jtitle: "Golf-Travel Packages Application",
+    content:
+      "Imagine the blend between Golf and Travels, Imagine golfers having no need to worry about the logistics of playing in off-shore games! That's what golfs.tripkaze.com offer you, visit our website today to see more gamimg packages available",
+    imgurl:
+      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/lmax_xgako0.png",
+    github: "",
+    liveurl: "https://golfs.tripkaze.com/",
   },
   {
     id: 2,
-    jtitle: "Real Estate Application",
+    jtitle: "Property and Travels Application",
     content:
-      "The application was developed for an estate in Lagos State Nigeria, to help capture resident data, pay necessary dues via its wallet system integrated with Paystack",
+      "The application was developed for property as well as travel agents who wish to sell their properties. The application provides a B2B and B2C channel for doing business between businesses and customers ",
+    // imgurl:
+    //   "https://res.cloudinary.com/dswna4lpk/image/upload/v1708355481/Staff%20Portal/omotoye_xjkatf.png",
     imgurl:
-      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708355481/Staff%20Portal/omotoye_xjkatf.png",
-    github:
-      "",
-    liveurl:
-      "https://omotoyecda.org/",
+      "https://res.cloudinary.com/dswna4lpk/image/upload/v1734656866/tripkaze_u531kf.png",
+    github: "",
+    liveurl: "https://https://tripkaze.com/login",
   },
-//   {
-//     id: 2,
-//     jtitle: "EMS Energy Management System",
-//     content:
-//       "The application helps readings from smart Energy, water and gas meters of clients and displays consumption on the dashboard.",
-//     imgurl:
-//       "https://img.freepik.com/free-vector/internet-things-iot-smart-connection-control-device-network-industry-resident-anywhere-anytime-anybody-any-business-with-internet-it-technology-futuristic-world_1150-61172.jpg?size=626&ext=jpg&uid=R75165962&ga=GA1.2.107027158.1657193171",
-//     github:
-//       "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
-//     liveurl:
-//       "https://63a460166fbc162ad244c849--thriving-duckanoo-29cf4c.netlify.app/",
-//   },
+
+  //   {
+  //     id: 2,
+  //     jtitle: "EMS Energy Management System",
+  //     content:
+  //       "The application helps readings from smart Energy, water and gas meters of clients and displays consumption on the dashboard.",
+  //     imgurl:
+  //       "https://img.freepik.com/free-vector/internet-things-iot-smart-connection-control-device-network-industry-resident-anywhere-anytime-anybody-any-business-with-internet-it-technology-futuristic-world_1150-61172.jpg?size=626&ext=jpg&uid=R75165962&ga=GA1.2.107027158.1657193171",
+  //     github:
+  //       "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+  //     liveurl:
+  //       "https://63a460166fbc162ad244c849--thriving-duckanoo-29cf4c.netlify.app/",
+  //   },
   {
     id: 3,
     jtitle: "Airline Incentive Application - Client Portal",
@@ -42,8 +51,7 @@ const JsonData = [
       "An incentive portal developed credit travelers booking on SabreGDS application with the aim of driving sales in central and west-africa",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354938/Staff%20Portal/bnwclient_tftr6j.png",
-    github:
-      "",
+    github: "",
     liveurl: "https://incentive.sabrecwa.com/",
   },
   {
@@ -52,21 +60,20 @@ const JsonData = [
     content: "Website for sabre central and west africa ",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708355186/Staff%20Portal/sabrecwa_dd8vwh.png",
-    github:
-      "",
+    github: "",
     liveurl: "https://sabrecwa.com",
   },
 
-  {
-    id: 5,
-    jtitle: "Lightmax Technologies Website",
-    content: "Website for Lightmax technology, a growing Tech company which I co-founded, with the aim of bridging the gap of automated hardware solution deeficiency in Nigeria",
-    imgurl:
-      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/lmax_xgako0.png",
-    github:
-      "",
-    liveurl: "https://lightmaxsofttech.com/",
-  },
+  // {
+  //   id: 5,
+  //   jtitle: "Lightmax Technologies Website",
+  //   content:
+  //     "Website for Lightmax technology, a growing Tech company which I co-founded, with the aim of bridging the gap of automated hardware solution deeficiency in Nigeria",
+  //   imgurl:
+  //     "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/lmax_xgako0.png",
+  //   github: "",
+  //   liveurl: "https://lightmaxsofttech.com/",
+  // },
   {
     id: 6,
     jtitle: "Airline Incentive Application - Admin Portal",
@@ -74,8 +81,7 @@ const JsonData = [
       "An incentive portal developed credit travelers booking on SabreGDS application with the aim of driving sales in central and west-africa",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/bnwadmin_c3h81m.png",
-    github:
-      "",
+    github: "",
     liveurl: "https://admin.sabrecwa.com/",
   },
 
@@ -91,7 +97,7 @@ const JsonData = [
     liveurl:
       "https://63a45cba51a71e23b69d9dde--zesty-alfajores-c53f9b.netlify.app/",
   },
-  
+
   {
     id: 8,
     jtitle: "EMR - Electronic Medical Record",
@@ -99,8 +105,7 @@ const JsonData = [
       "An Electronic Medical Record Web application for managing Doctor Patient Relationship",
     imgurl:
       "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    github:
-      "",
+    github: "",
     liveurl: "https://magenta-cat-ccde1e.netlify.app/",
   },
   {
@@ -110,12 +115,9 @@ const JsonData = [
       "Performance Appraisal is an application use to access staffs performance based on set Key Performance Index-KPI ",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/appraisal_sttsu3.png",
-    github:
-      "",
+    github: "",
     liveurl: "https://fluffy-choux-a9a629.netlify.app/",
   },
-  
-  
 
   // {
   //     id: 4,
