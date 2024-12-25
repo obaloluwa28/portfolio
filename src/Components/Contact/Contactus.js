@@ -24,7 +24,7 @@ const Contactus = ({ toggleState }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://portfolio-backend-ihw99c238-obaloluwa28s-projects.vercel.app/contact",
+        "https://https://portfolio-backend-hazel-gamma.vercel.app/contact",
         values
       );
       alert(response.data.message || "Form submitted successfully!");
