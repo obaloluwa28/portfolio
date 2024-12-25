@@ -36,7 +36,7 @@ const App = () => {
   const countercheck = incomingdata.length - 3;
 
   useEffect(() => {
-    getViewResponse();
+    // getViewResponse();
     // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
@@ -200,12 +200,12 @@ const App = () => {
 
       <Footer toggleState={bgcolor} />
 
-      <div id="lv-countainer">
+      {/* <div id="lv-countainer">
         <div id="likes-counter" onClick={clickLike}>
           <BiLike id="likeicon" />
           <span>{likes}</span>
         </div>
-      </div>
+      </div> */}
 
       {images !== "" && (
         <div className="w-full h-[100vh] z-20 flex justify-center top-0 items-center fixed bg-[#ccc]">

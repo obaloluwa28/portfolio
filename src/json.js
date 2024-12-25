@@ -15,7 +15,7 @@ const JsonData = [
     content:
       "Imagine the blend between Golf and Travels, Imagine golfers having no need to worry about the logistics of playing in off-shore games! That's what golfs.tripkaze.com offer you, visit our website today to see more gamimg packages available",
     imgurl:
-      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708354937/Staff%20Portal/lmax_xgako0.png",
+      "https://res.cloudinary.com/dswna4lpk/image/upload/v1735029807/tipkaze_golf_dag3tl.png",
     github: "",
     liveurl: "https://golfs.tripkaze.com/",
   },
@@ -29,7 +29,7 @@ const JsonData = [
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1734656866/tripkaze_u531kf.png",
     github: "",
-    liveurl: "https://https://tripkaze.com/login",
+    liveurl: "https://tripkaze.com/login",
   },
 
   //   {
