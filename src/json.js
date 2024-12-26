@@ -54,14 +54,24 @@ const JsonData = [
     github: "",
     liveurl: "https://incentive.sabrecwa.com/",
   },
+  // {
+  //   id: 4,
+  //   jtitle: "Sabre Website ",
+  //   content: "Website for sabre central and west africa ",
+  //   imgurl:
+  //     "https://res.cloudinary.com/dswna4lpk/image/upload/v1708355186/Staff%20Portal/sabrecwa_dd8vwh.png",
+  //   github: "",
+  //   liveurl: "https://sabrecwa.com",
+  // },
   {
     id: 4,
-    jtitle: "Sabre Website ",
-    content: "Website for sabre central and west africa ",
+    jtitle: "Qruil Website",
+    content:
+      "This is a job portal where applicants Job posters and can apply to Job adverts posted by employers",
     imgurl:
-      "https://res.cloudinary.com/dswna4lpk/image/upload/v1708355186/Staff%20Portal/sabrecwa_dd8vwh.png",
+      "https://res.cloudinary.com/dswna4lpk/image/upload/v1735193066/Qurill_gsxjty.png",
     github: "",
-    liveurl: "https://sabrecwa.com",
+    liveurl: "https://qruil.com",
   },
 
   // {
