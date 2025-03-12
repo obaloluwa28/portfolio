@@ -42,7 +42,7 @@
 .oba-feeback-container{
     width: 43vw;
     min-width: 300px;
-    min-height: 200px;
+    min-height: 230px;
     height: fit-content;
     display: flex;
     /* justify-content: flex-start; */

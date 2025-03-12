@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Projectcard from "./Components/Cards/Sideporject2";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
@@ -17,15 +17,12 @@ import FeedbackContainer from "./Components/Feedback/FeedbackContainer";
 import { Responsive } from "./responsive/responsive";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import {
-  IoIosArrowDroprightCircle,
-  IoIosArrowDropleftCircle,
-} from "react-icons/io";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 let counter = 0;
 
 const App = () => {
+  const aboutMeRef = useRef(null);
   const [bgcolor, setBgcolor] = useState(true);
   const [likes, setLikes] = useState();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -36,8 +33,39 @@ const App = () => {
   const countercheck = incomingdata.length - 3;
 
   useEffect(() => {
-    // getViewResponse();
-    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    const observerOptions = {
+      root: null, // Viewport
+      rootMargin: "0px",
+      threshold: 0.2, // 20% visibility triggers the animation
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          entry.target.classList.remove("opacity-0", "translate-y-10");
+        } else {
+          entry.target.classList.add("opacity-0", "translate-y-10");
+          entry.target.classList.remove("opacity-100", "translate-y-0");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    if (aboutMeRef.current) {
+      observer.observe(aboutMeRef.current);
+    }
+
+    return () => {
+      if (aboutMeRef.current) {
+        observer.unobserve(aboutMeRef.current);
+      }
+    };
   }, []);
 
   const getViewResponse = async () => {
@@ -109,15 +137,26 @@ const App = () => {
             <div className="skills-contain">
               <div className="skills-contain-left">
                 <img id="mypixs" src={mypix} alt="mypix" />
-                <span id={bgcolor ? "aboutme-text" : "aboutme-text_"}>
-                  I'm an innovative purpose-driven professional with experience
-                  in web-design, development and software development across
-                  industries. Equipped with record of success in consistently
-                  identifying and providing the technological needs of companies
-                  through ingenious innovations. I'm very passionate about
-                  emerging technologies like 5G & IoT, Robotics & Autonomous
-                  Vehicles, Web 3.0 & Block-Chain.
-                </span>
+                <div
+                  ref={aboutMeRef}
+                  className="opacity-0 translate-y-10 transition-all duration-700 ease-out"
+                >
+                  <p
+                    className={`text-lg mt-4 md:mt-0 ${
+                      bgcolor ? "text-black" : "text-gray-300"
+                    }`}
+                  >
+                    I am a results-driven Full-Stack Software Engineer with
+                    expertise in designing and developing scalable web
+                    applications, automation systems, and microservices. With a
+                    proven track record of optimizing performance, streamlining
+                    deployments, and enhancing system reliability, I specialize
+                    in React, Next.js, Node.js, Golang, and cloud-based
+                    solutions. Passionate about emerging technologies, I explore
+                    advancements in IoT, AI, Blockchain, and automation to drive
+                    innovation and efficiency across industries.
+                  </p>
+                </div>
               </div>
               <div className="skills-contain-right">
                 <Skills toggleState={bgcolor} />
@@ -157,17 +196,20 @@ const App = () => {
                   // customLeftArrow={<IoIosArrowDroprightCircle size={25} color="#333"/>}
                   // customRightArrow={<IoIosArrowDropleftCircle size={25} color="#333"/>}
                 >
-                  {incomingdata.map((item, index) => (
-                    <Projectcard
-                      key={index}
-                      buttonclicked={buttnTrig}
-                      liveurl={item.liveurl}
-                      slideImageurl={item.imgurl}
-                      subtit={item.content}
-                      title={item.jtitle}
-                      github={item.github}
-                    />
-                  ))}
+                  {incomingdata
+                    .slice() // Create a shallow copy to avoid mutating the original array
+                    .sort((a, b) => a.id - b.id) // Sort in ascending order based on id
+                    .map((item, index) => (
+                      <Projectcard
+                        key={index}
+                        buttonclicked={buttnTrig}
+                        liveurl={item.liveurl}
+                        slideImageurl={item.imgurl}
+                        subtit={item.content}
+                        title={item.jtitle}
+                        github={item.github}
+                      />
+                    ))}
                 </Carousel>
               </div>
             </div>
@@ -176,7 +218,7 @@ const App = () => {
               <span className={bgcolor ? "sideproj_title" : "sideproj_title_"}>
                 In Development
               </span>
-              <div className="side-card-containers">
+              <div className="side-card-containers gap-2">
                 {incoming.map((items) => (
                   <Sideporject2
                     myimage={items.imgurl}

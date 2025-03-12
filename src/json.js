@@ -102,22 +102,21 @@ const JsonData = [
       "The Project is aimed at controlling ones remote facility and Home Utilities on a button click. One can also view the facility remotely with IP Camera installed",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1708687191/Staff%20Portal/homeauto1_auwl7w.png",
-    github:
-      "https://www.cryptosmartnow.io/wp-content/uploads/2022/06/Borderless-Dev-Hub-1024x530.jpg",
+    github: "",
     liveurl:
       "https://63a45cba51a71e23b69d9dde--zesty-alfajores-c53f9b.netlify.app/",
   },
 
-  {
-    id: 8,
-    jtitle: "EMR - Electronic Medical Record",
-    content:
-      "An Electronic Medical Record Web application for managing Doctor Patient Relationship",
-    imgurl:
-      "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    github: "",
-    liveurl: "https://magenta-cat-ccde1e.netlify.app/",
-  },
+  // {
+  //   id: 8,
+  //   jtitle: "EMR - Electronic Medical Record",
+  //   content:
+  //     "An Electronic Medical Record Web application for managing Doctor Patient Relationship",
+  //   imgurl:
+  //     "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  //   github: "",
+  //   liveurl: "https://magenta-cat-ccde1e.netlify.app/",
+  // },
   {
     id: 9,
     jtitle: "Performance Appraisal Application",
