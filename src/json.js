@@ -1,6 +1,6 @@
 const JsonData = [
   {
-    id: 1,
+    id: 4,
     jtitle: "Ecommerce Store",
     content:
       "This project is a multi vendor E-commerce application where Items can be pruchased a and orders can be made. New sellers can signup and upload products to be viewed by user in the store front. Payment can be made online or via pay on delivery.",
@@ -64,10 +64,10 @@ const JsonData = [
   //   liveurl: "https://sabrecwa.com",
   // },
   {
-    id: 4,
+    id: 1,
     jtitle: "Qruil Website",
     content:
-      "This is a job portal where applicants Job posters and can apply to Job adverts posted by employers",
+      "Unlock the power of perfect matches! Qurill platform streamlines the hiring process, enabling employers to post jobs, connect with qualified candidates, and build high-performing teams.",
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1735193066/Qurill_gsxjty.png",
     github: "",
