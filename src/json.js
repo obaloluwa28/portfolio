@@ -29,7 +29,7 @@ const JsonData = [
     imgurl:
       "https://res.cloudinary.com/dswna4lpk/image/upload/v1734656866/tripkaze_u531kf.png",
     github: "",
-    liveurl: "https://tripkaze.com/login",
+    liveurl: "https://tripkaze.com",
   },
 
   //   {
